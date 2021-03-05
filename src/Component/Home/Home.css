@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+
+body {
+  background-color: #171717;
+  color: whitesmoke;
+  font-family: Poppins;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* body {
+  margin: 0;
+  height: 100vh;
+  cursor: none;
+  background: rgb(27, 27, 27);
+} */
+
+.home-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.name-container {
+  cursor: pointer;
+  font-size: 4vw;
+  font-weight: 800;
+  animation: fade-in-fwd 1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  /* text-indent: 0.1vw; */
+}
+
+.first-name {
+  margin-right: 1vw;
+}
+
+.name-container,
+.first-name,
+.last-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+
+.name-letter {
+  transition: 0.1s ease;
+}
+
+.name-letter:hover {
+  transform: scale(1.15);
+}
+
+.home-discription {
+  margin-top: 10px;
+  font-size: 2vw;
+  height: 50px;
+  font-family: Raleway;
+  font-style: normal;
+}
+
+.social-media-icons {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: absolute;
+  left: 5%;
+  transform: translateY(-50%);
+  animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+.social-media-icons svg,
+.message-icons svg {
+  margin: 5px;
+  color: whitesmoke;
+  opacity: 0.8;
+  transition: 0.2s ease;
+}
+
+.social-media-icons svg:hover,
+.message-icons svg:hover {
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+.social-media-icons a,
+.message-icons a {
+  outline: none;
+}
+
+.message-icons {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: absolute;
+  right: 5%;
+  transform: translateY(-50%);
+  animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@keyframes fade-in-fwd {
+  0% {
+    transform: translateZ(-80px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-left {
+  0% {
+    transform: translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-right {
+  0% {
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
