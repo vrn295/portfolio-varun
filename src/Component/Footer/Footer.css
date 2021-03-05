@@ -24,3 +24,22 @@
 .footer-social-media-icons svg:hover {
   transform: scale(1.2);
 }
+
+@media (max-width: 1200px) {
+  .footer-container {
+    height: 20vh;
+    font-size: 3vw;
+  }
+  .footer-social-media-icons svg {
+    margin: 8px;
+    font-size: 1.6rem !important;
+  }
+}
+@media (max-width: 400px) {
+  .footer-container {
+    font-size: 4vw;
+  }
+  .footer-social-media-icons svg {
+    font-size: 1.5rem !important;
+  }
+}

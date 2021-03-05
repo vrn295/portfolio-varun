@@ -85,3 +85,32 @@
   background-color: whitesmoke;
   color: #04a777;
 }
+
+@media (max-width: 1200px) {
+  .my-portfolio {
+    font-size: 6vw;
+    margin-bottom: 80px;
+  }
+  .my-work {
+    grid-template-columns: 60vw;
+    grid-gap: 25px;
+  }
+  .work-list {
+    font-size: 3vw;
+  }
+  .work-list img {
+    width: 80vw;
+    border-radius: 5px;
+  }
+  .work-list caption {
+    width: 50vw;
+  }
+}
+@media (max-width: 400px) {
+  .my-portfolio {
+    font-size: 8vw;
+  }
+  .work-list {
+    font-size: 3vw;
+  }
+}

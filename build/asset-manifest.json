@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.22f5b3a5.chunk.css",
+    "main.css": "/static/css/main.2d714b71.chunk.css",
     "main.js": "/static/js/main.a0671bc4.chunk.js",
     "main.js.map": "/static/js/main.a0671bc4.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.2fd7dc15.js",
@@ -8,7 +8,7 @@
     "static/js/2.18fd0094.chunk.js": "/static/js/2.18fd0094.chunk.js",
     "static/js/2.18fd0094.chunk.js.map": "/static/js/2.18fd0094.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.22f5b3a5.chunk.css.map": "/static/css/main.22f5b3a5.chunk.css.map",
+    "static/css/main.2d714b71.chunk.css.map": "/static/css/main.2d714b71.chunk.css.map",
     "static/js/2.18fd0094.chunk.js.LICENSE.txt": "/static/js/2.18fd0094.chunk.js.LICENSE.txt",
     "static/media/Designer icon.f85835e6.png": "/static/media/Designer icon.f85835e6.png",
     "static/media/Pig-Game.01bae8e7.png": "/static/media/Pig-Game.01bae8e7.png",
@@ -21,7 +21,7 @@
   "entrypoints": [
     "static/js/runtime-main.2fd7dc15.js",
     "static/js/2.18fd0094.chunk.js",
-    "static/css/main.22f5b3a5.chunk.css",
+    "static/css/main.2d714b71.chunk.css",
     "static/js/main.a0671bc4.chunk.js"
   ]
 }

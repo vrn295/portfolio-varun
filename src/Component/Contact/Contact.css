@@ -125,3 +125,102 @@
 .contact-form button:hover {
   background-color: #049b6d;
 }
+
+@media (max-width: 12000px) {
+  .contact-me {
+    font-size: 6vw;
+    margin-bottom: 80px;
+  }
+  .contact-deatils {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact-form {
+    width: 80vw;
+  }
+  .contact-form h3,
+  .contact-deatils h3 {
+    font-size: 4vw;
+  }
+  .contact-form input,
+  .contact-form textarea {
+    min-width: 80vw;
+    font-size: 2vw;
+    border-radius: 5px;
+  }
+  .contact-form button {
+    width: auto;
+    padding: 1.5vw 3vw;
+    font-size: 2vw;
+    border-radius: 5px;
+  }
+  .contact-info {
+    margin-top: 25px;
+    min-width: 80vw;
+    height: 30vw;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 15vw 15vw;
+    grid-gap: 15px;
+    grid-column-gap: 15vw;
+    justify-items: center;
+    align-content: center;
+    margin-bottom: 80px;
+  }
+  .info-cards {
+    margin: 0%;
+    grid-template-rows: 4vw 4vw;
+    grid-template-columns: 8vw 24vw;
+  }
+  .info-cards svg {
+    font-size: 6vw;
+  }
+
+  .info-cards p {
+    font-size: 2vw;
+  }
+
+  .info-cards h4 {
+    font-size: 2vw;
+  }
+}
+
+@media (max-width: 400px) {
+  .contact-me {
+    font-size: 8vw;
+  }
+
+  .contact-form h3,
+  .contact-deatils h3 {
+    font-size: 6vw;
+  }
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 3vw;
+  }
+  .contact-form button {
+    padding: 2vw 4vw;
+    font-size: 3vw;
+  }
+  .contact-info {
+    grid-template-columns: 20vw 20vw;
+    grid-gap: 20px;
+    grid-column-gap: 15vw;
+  }
+  .info-cards {
+    grid-template-rows: 4vw 4vw;
+    grid-template-columns: 10vw 24vw;
+  }
+  .info-cards svg {
+    font-size: 8vw;
+  }
+
+  .info-cards p {
+    font-size: 2vw;
+  }
+
+  .info-cards h4 {
+    font-size: 2.4vw;
+  }
+}

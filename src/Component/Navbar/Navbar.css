@@ -7,7 +7,7 @@
   background-color: black !important;
   transform: translateX(100%);
   transition: transform 0.5s ease-in;
-  z-index: 1;
+  z-index: 2;
 }
 
 .navbar-active {
@@ -25,7 +25,7 @@
   font-family: Poppins;
   font-style: normal;
   font-weight: normal;
-  font-size: 36px;
+  font-size: 2.5vw;
   line-height: 72px;
 }
 
@@ -77,4 +77,27 @@
 }
 .nav-list li a:hover {
   color: #04a777;
+}
+
+@media (max-width: 400px) {
+  .hamburger {
+    top: 5%;
+    right: 5%;
+  }
+  .hamburger-lines {
+    height: 3.5px;
+    margin: 4px;
+  }
+  .hamburger-1 {
+    width: 40px;
+  }
+  .hamburger-2 {
+    width: 30px;
+  }
+  .hamburger-3 {
+    width: 20px;
+  }
+  .nav-list {
+    font-size: 6vw;
+  }
 }

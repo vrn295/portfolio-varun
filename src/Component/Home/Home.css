@@ -133,11 +133,41 @@ body {
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media (max-width: 1200px) {
+  .name-container {
+    font-size: 6vw;
+  }
+  .home-discription {
+    font-size: 3vw;
+  }
+}
+
+@media (max-width: 400px) {
   .name-container {
     font-size: 8vw;
   }
   .home-discription {
     font-size: 4vw;
   }
+  .social-media-icons svg {
+    font-size: 1rem !important;
+  }
+  .message-icons svg {
+    font-size: 1.5rem !important;
+  }
 }
+
+/* @media (max-width: 480px) {
+  .name-container {
+    font-size: 8vw;
+  }
+  .home-discription {
+    font-size: 4vw;
+  }
+} */
+
+/* @media (max-width: 480px){}
+@media (min-width: 480px){}
+@media (min-width: 800px){} */
+/* @media (max-width: 1200px){}
+@media (max-width: 400px){} */
