@@ -7,7 +7,7 @@ body {
   font-family: Poppins;
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 /* body {
@@ -130,5 +130,14 @@ body {
   100% {
     transform: translateX(0);
     opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .name-container {
+    font-size: 8vw;
+  }
+  .home-discription {
+    font-size: 4vw;
   }
 }

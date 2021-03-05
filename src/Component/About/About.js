@@ -1,4 +1,5 @@
 import './About.css';
+import Footer from '../Footer/Footer'
 import AboutImage from '../Media/WhatsApp Image 2020-11-24 at 5.57.13 PM.jpeg'
 import WebDeveloperIcon from '../Media/Web developer icon.png'
 import DesignerIcon from '../Media/Designer icon.png'
@@ -94,7 +95,7 @@ const About = () => {
                         </div>
                     </div>
                 </div>
-
+                <Footer />
             
         </div>
     )
