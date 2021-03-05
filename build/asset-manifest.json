@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.dd0148da.chunk.css",
-    "main.js": "/static/js/main.640ff5ad.chunk.js",
-    "main.js.map": "/static/js/main.640ff5ad.chunk.js.map",
+    "main.css": "/static/css/main.2e09b802.chunk.css",
+    "main.js": "/static/js/main.053e4d27.chunk.js",
+    "main.js.map": "/static/js/main.053e4d27.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.2fd7dc15.js",
     "runtime-main.js.map": "/static/js/runtime-main.2fd7dc15.js.map",
-    "static/js/2.18fd0094.chunk.js": "/static/js/2.18fd0094.chunk.js",
-    "static/js/2.18fd0094.chunk.js.map": "/static/js/2.18fd0094.chunk.js.map",
+    "static/js/2.dbadc7d0.chunk.js": "/static/js/2.dbadc7d0.chunk.js",
+    "static/js/2.dbadc7d0.chunk.js.map": "/static/js/2.dbadc7d0.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.dd0148da.chunk.css.map": "/static/css/main.dd0148da.chunk.css.map",
-    "static/js/2.18fd0094.chunk.js.LICENSE.txt": "/static/js/2.18fd0094.chunk.js.LICENSE.txt",
+    "static/css/main.2e09b802.chunk.css.map": "/static/css/main.2e09b802.chunk.css.map",
+    "static/js/2.dbadc7d0.chunk.js.LICENSE.txt": "/static/js/2.dbadc7d0.chunk.js.LICENSE.txt",
     "static/media/Designer icon.f85835e6.png": "/static/media/Designer icon.f85835e6.png",
     "static/media/Pig-Game.a351a222.png": "/static/media/Pig-Game.a351a222.png",
     "static/media/ToDo.a0bdee0f.png": "/static/media/ToDo.a0bdee0f.png",
@@ -20,8 +20,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.2fd7dc15.js",
-    "static/js/2.18fd0094.chunk.js",
-    "static/css/main.dd0148da.chunk.css",
-    "static/js/main.640ff5ad.chunk.js"
+    "static/js/2.dbadc7d0.chunk.js",
+    "static/css/main.2e09b802.chunk.css",
+    "static/js/main.053e4d27.chunk.js"
   ]
 }

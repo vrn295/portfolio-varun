@@ -121,12 +121,17 @@
   border-width: thin;
   outline: none;
 }
+.contact-form button:focus {
+  border: #04a777 solid;
+  border-width: thin;
+  outline: none;
+}
 
 .contact-form button:hover {
   background-color: #049b6d;
 }
 
-@media (max-width: 12000px) {
+@media (max-width: 1200px) {
   .contact-me {
     font-size: 6vw;
     margin-bottom: 80px;
