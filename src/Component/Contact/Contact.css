@@ -59,7 +59,7 @@
   color: whitesmoke;
 }
 
-.contact-form button {
+.btn {
   background-color: #04a777;
   width: 8vw;
   padding: 0.5vw 1vw;
@@ -67,7 +67,7 @@
   font-family: Poppins;
   font-weight: bold;
   font-size: 1.2vw;
-  border-radius: 10px;
+  border-radius: 5px;
   color: whitesmoke;
 }
 
@@ -121,13 +121,13 @@
   border-width: thin;
   outline: none;
 }
-.contact-form button:focus {
+/* .btn:focus {
   border: #04a777 solid;
   border-width: thin;
   outline: none;
-}
+} */
 
-.contact-form button:hover {
+.btn:hover {
   background-color: #049b6d;
 }
 

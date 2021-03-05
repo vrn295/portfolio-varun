@@ -3,7 +3,7 @@ import Footer from '../Footer/Footer'
 import AboutImage from '../Media/WhatsApp Image 2020-11-24 at 5.57.13 PM.jpeg'
 import WebDeveloperIcon from '../Media/Web developer icon.png'
 import DesignerIcon from '../Media/Designer icon.png'
-
+import Resume from '../Media/Resume.pdf'
 const About = () => {
     return(
         <div className='about-container'>
@@ -14,6 +14,7 @@ const About = () => {
                 <div className='about-details-text'>
                     <h2>I'm <span className='color-change'>Web Developer</span> & <span className='color-change'>Graphic Designer</span> based in Delhi, India</h2>
                     <p>I'm interested in all kinds of visual communication, but my major focus is on designing web, mobile & tablet interfaces. I also have skills in other fields like branding, icon design or web development.</p>
+                    <button className='btn btn-download-cv'><a href={Resume} download='Varun-Resume'>Download CV</a></button>
                 </div>
                 <img src={AboutImage} alt="My Photo"/>
             </div>

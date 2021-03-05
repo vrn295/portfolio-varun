@@ -13,6 +13,7 @@
 .about-h1 {
   font-family: raleway;
   font-size: 3vw;
+  text-align: center;
 }
 
 .about-details {
@@ -40,6 +41,17 @@
 .about-details img {
   max-width: 30vw;
   border-radius: 10px;
+}
+.btn-download-cv {
+  width: 12vw !important;
+  padding: 1vw 1vw !important;
+  margin-left: 10vw !important;
+  margin-top: 2vw;
+}
+
+.btn-download-cv a {
+  text-decoration: none !important;
+  color: inherit;
 }
 
 .my-services {
@@ -249,6 +261,7 @@
   }
   .about-details h2 {
     font-size: 4vw;
+    text-align: justify;
   }
   .about-details p {
     font-size: 2vw;
@@ -287,6 +300,15 @@
   #skill-bars {
     width: 80vw;
   }
+  .btn-download-cv {
+    width: 20vw !important;
+    padding: 1.5vw 1.5vw !important;
+    margin-left: 10vw !important;
+    margin-top: 2vw;
+    font-size: 2vw !important;
+    /* font-weight: normal !important; */
+    margin-left: 35% !important;
+  }
 }
 
 @media (max-width: 500px) {
@@ -302,5 +324,12 @@
 
   .services h2 {
     font-size: 5vw;
+  }
+  .btn-download-cv {
+    width: 24vw !important;
+    padding: 2vw 2vw !important;
+    font-size: 2.5vw !important;
+    /* font-weight: normal !important; */
+    margin-left: 35% !important;
   }
 }
