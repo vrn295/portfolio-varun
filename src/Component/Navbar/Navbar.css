@@ -79,7 +79,7 @@
   color: #04a777;
 }
 
-@media (max-width: 300px) {
+@media (max-width: 500px) {
   .hamburger {
     top: 5%;
     right: 5%;

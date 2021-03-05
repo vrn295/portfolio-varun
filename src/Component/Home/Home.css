@@ -142,12 +142,12 @@ body {
   }
 }
 
-@media (max-width: 300px) {
+@media (max-width: 500px) {
   .name-container {
     font-size: 8vw;
   }
   .home-discription {
-    font-size: 4vw;
+    font-size: 5vw;
   }
   .social-media-icons svg {
     font-size: 1rem !important;

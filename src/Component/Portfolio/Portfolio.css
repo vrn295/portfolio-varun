@@ -106,7 +106,7 @@
     width: 50vw;
   }
 }
-@media (max-width: 300px) {
+@media (max-width: 500px) {
   .my-portfolio {
     font-size: 8vw;
   }

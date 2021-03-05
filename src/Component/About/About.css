@@ -289,15 +289,15 @@
   }
 }
 
-@media (max-width: 300px) {
+@media (max-width: 500px) {
   .about-h1 {
     font-size: 8vw;
   }
   .about-details h2 {
-    font-size: 5vw;
+    font-size: 6vw;
   }
   .about-details p {
-    font-size: 3vw;
+    font-size: 4vw;
   }
 
   .services h2 {

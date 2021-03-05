@@ -186,7 +186,7 @@
   }
 }
 
-@media (max-width: 300px) {
+@media (max-width: 500px) {
   .contact-me {
     font-size: 8vw;
   }
