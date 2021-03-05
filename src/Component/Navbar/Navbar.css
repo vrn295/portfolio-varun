@@ -45,7 +45,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  z-index: 1;
+  z-index: 2;
 }
 
 .hamburger-lines {
@@ -79,7 +79,7 @@
   color: #04a777;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 300px) {
   .hamburger {
     top: 5%;
     right: 5%;

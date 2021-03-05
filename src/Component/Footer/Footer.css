@@ -35,7 +35,7 @@
     font-size: 1.6rem !important;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 300px) {
   .footer-container {
     font-size: 4vw;
   }
