@@ -52,7 +52,7 @@
   height: 4px;
   margin: 4px;
   border-radius: 3px;
-  background-color: whitesmoke !important;
+  background-color: whitesmoke;
   transition: 0.2s ease-in;
 }
 
