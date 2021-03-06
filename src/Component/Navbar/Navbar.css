@@ -1,5 +1,5 @@
 .navbar-container {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   position: fixed;
   top: 0%;
@@ -82,7 +82,6 @@
 @media (max-width: 500px) {
   .hamburger {
     top: 5%;
-    right: 5%;
   }
   .hamburger-lines {
     height: 3.5px;

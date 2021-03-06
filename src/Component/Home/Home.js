@@ -18,6 +18,10 @@ const Home = () => {
         var temp = document.querySelectorAll('span');
         temp.style.color = '#101010';
     }
+     
+    const comingsoon = () =>{
+        alert('This feature in Coming Soon')
+    }
     
     return(
         <div className='home-container'>
@@ -47,7 +51,7 @@ const Home = () => {
                 <a href="https://github.com/vrn295" target='_blank'><Icon icon={githubFill} style={{fontSize: '1.5rem'}} /></a>
             </div>
             <div className='message-icons'>
-                <a onClick = {colorOptions}><Icon icon={settingIcon} style={{fontSize: '2rem'}} /></a>
+                <a onClick = {comingsoon}><Icon icon={settingIcon} style={{fontSize: '2rem'}} /></a>
                 <a href="mailto:varun.ord295@gmail.com?Subject=Hello Varun"><Icon icon={mail16Filled} style={{fontSize: '2rem'}} /></a>
             </div>
         </div>
