@@ -42,7 +42,7 @@ const Home = () => {
                 </div>
             </div>
             <div className='home-discription'>
-                <p>I'm a <span className='color-change'>Web Designer</span></p>
+                <p>I'm a <span className='color-change'>Web Developer</span></p>
             </div>
             <div className='social-media-icons'>
                 <a href="https://www.facebook.com/profile.php?id=100004948182828" target='_blank'><Icon icon={facebookFill} style={{fontSize: '1.5rem'}} /></a>
