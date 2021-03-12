@@ -52,7 +52,7 @@ const Home = () => {
             </div>
             <div className='message-icons'>
                 <a onClick = {comingsoon}><Icon icon={settingIcon} style={{fontSize: '2rem'}} /></a>
-                <a href="mailto:varun.ord295@gmail.com?Subject=Hello Varun"><Icon icon={mail16Filled} style={{fontSize: '2rem'}} /></a>
+                <a href="mailto:varun.org295@gmail.com?Subject=Hello Varun"><Icon icon={mail16Filled} style={{fontSize: '2rem'}} /></a>
             </div>
         </div>
     )
