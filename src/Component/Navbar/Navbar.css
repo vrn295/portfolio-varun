@@ -69,14 +69,14 @@
 .hamburger:hover .hamburger-lines {
   /* transform: skewX(10deg); */
   transform: scaleX(1.1);
-  background-color: #04a777;
+  background-color: var(--primary-color);
 }
 
 .nav-list li:hover {
   transform: scale(1.1);
 }
 .nav-list li a:hover {
-  color: #04a777;
+  color: var(--primary-color);
 }
 
 @media (max-width: 500px) {

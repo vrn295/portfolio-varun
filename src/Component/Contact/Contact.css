@@ -60,7 +60,7 @@
 }
 
 .btn {
-  background-color: #04a777;
+  background-color: var(--primary-color);
   width: 8vw;
   padding: 0.5vw 1vw;
   border: none;
@@ -79,7 +79,7 @@
   min-width: 30vw;
   height: auto;
   border-radius: 20px;
-  background-color: #04a777;
+  background-color: var(--primary-color);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -111,18 +111,18 @@
 }
 
 .contact-form input:focus {
-  border: #04a777 solid;
+  border: var(--primary-color) solid;
   border-width: thin;
   outline: none;
 }
 
 .contact-form textarea:focus {
-  border: #04a777 solid;
+  border: var(--primary-color) solid;
   border-width: thin;
   outline: none;
 }
 /* .btn:focus {
-  border: #04a777 solid;
+  border: var(--primary-color) solid;
   border-width: thin;
   outline: none;
 } */

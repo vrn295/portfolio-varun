@@ -83,7 +83,7 @@
 
 .work-list button:hover {
   background-color: whitesmoke;
-  color: #04a777;
+  color: var(--primary-color);
 }
 
 @media (max-width: 1200px) {

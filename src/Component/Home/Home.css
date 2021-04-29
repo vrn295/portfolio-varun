@@ -14,6 +14,22 @@ body {
   overflow-x: hidden !important;
 }
 
+html {
+  --primary-color: #04a777;
+}
+html[theme-color="default"] {
+  --primary-color: #04a777;
+}
+html[theme-color="pink"] {
+  --primary-color: #c70039;
+}
+html[theme-color="blue"] {
+  --primary-color: #00909e;
+}
+html[theme-color="purple"] {
+  --primary-color: #481380;
+}
+
 /* body {
   margin: 0;
   height: 100vh;
@@ -31,6 +47,14 @@ body {
   overflow-x: hidden;
 }
 
+span {
+  color: var(--primary-color);
+}
+
+.color-change {
+  color: var(--primary-color);
+}
+
 .name-container {
   cursor: pointer;
   font-size: 4vw;
@@ -41,6 +65,7 @@ body {
 
 .first-name {
   margin-right: 1vw;
+  color: var(--primary-color);
 }
 
 .name-container,
@@ -104,6 +129,10 @@ body {
   right: 5%;
   transform: translateY(-50%);
   animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.color-setting-container {
+  position: relative;
 }
 
 @keyframes fade-in-fwd {

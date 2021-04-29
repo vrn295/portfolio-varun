@@ -6,10 +6,6 @@
   z-index: 0;
 }
 
-.color-change {
-  color: #04a777;
-}
-
 .about-h1 {
   font-family: raleway;
   font-size: 3vw;
@@ -87,7 +83,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #04a777;
+  background-color: var(--primary-color);
   border-radius: 30px;
   width: 8vw;
   margin-top: 2vw;
@@ -112,7 +108,7 @@
 }
 
 .services-box:hover {
-  background-color: #04a777;
+  background-color: var(--primary-color);
 }
 
 .skills {
@@ -172,7 +168,7 @@
   border-radius: 10px;
   transform: scaleX(0);
   transform-origin: left;
-  background: #04a777;
+  background: var(--primary-color);
   animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
 }
 #bar #progress-line.html .span {

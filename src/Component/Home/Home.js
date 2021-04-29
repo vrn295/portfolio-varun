@@ -8,19 +8,30 @@ import githubFill from '@iconify/icons-akar-icons/github-fill';
 import instagramFill from '@iconify/icons-akar-icons/instagram-fill';
 import settingIcon from '@iconify/icons-uil/setting';
 import mail16Filled from '@iconify/icons-fluent/mail-16-filled';
+import ColorModal from './ColorModal';
+import { useState } from 'react';
 
 const Home = () => {
+    const [colorModalStatus, setColorModalStatus] = useState(false)
+
     var firstName = "Varun";
     var firstNameArray = firstName.split('');
     var lastName = "Kumar";
     var lastNameArray = lastName.split('');
-    function colorOptions () {
-        var temp = document.querySelectorAll('span');
-        temp.style.color = '#101010';
+    const colorOptions = () => {
+        var temp = document.getElementsByClassName('color-change');
+        temp.style.color = '#101010 !important';
+        // var hover = document.getElementsByClassName('hover-efffect');
+
     }
      
-    const comingsoon = () =>{
-        alert('This feature in Coming Soon')
+    const colorChange = () =>{
+        const html = document.querySelector('html')
+        html.setAttribute('theme-color', 'pink')
+    }
+
+    const colorsOption = () => {
+        
     }
     
     return(
@@ -29,7 +40,7 @@ const Home = () => {
             {/* Name Container */}
             <div className='name-container'>
                 {/* Printing name letter by letter */}
-                <div className='first-name color-change'>
+                <div className='first-name'>
                     {firstNameArray.map((letter) => (
                         <p className='name-letter'>{letter}</p>
                     ))}
@@ -42,7 +53,7 @@ const Home = () => {
                 </div>
             </div>
             <div className='home-discription'>
-                <p>I'm a <span className='color-change'>Web Developer</span></p>
+                <p>I'm a <span className=''>Web Developer</span></p>
             </div>
             <div className='social-media-icons'>
                 <a href="https://www.facebook.com/profile.php?id=100004948182828" target='_blank'><Icon icon={facebookFill} style={{fontSize: '1.5rem'}} /></a>
@@ -51,7 +62,10 @@ const Home = () => {
                 <a href="https://github.com/vrn295" target='_blank'><Icon icon={githubFill} style={{fontSize: '1.5rem'}} /></a>
             </div>
             <div className='message-icons'>
-                <a onClick = {comingsoon}><Icon icon={settingIcon} style={{fontSize: '2rem'}} /></a>
+                <div className='color-setting-container'>
+                    <a  onClick = {() => {setColorModalStatus(!colorModalStatus)}} ><Icon icon={settingIcon} style={{fontSize: '2rem'}} /></a>
+                      { colorModalStatus && <ColorModal />}  
+                </div> 
                 <a href="mailto:varun.org295@gmail.com?Subject=Hello Varun"><Icon icon={mail16Filled} style={{fontSize: '2rem'}} /></a>
             </div>
         </div>

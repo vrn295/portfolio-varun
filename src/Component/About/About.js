@@ -21,7 +21,7 @@ const About = () => {
             <div className='my-services'>
                 <h1 className='my-skills about-h1'>My <span className='color-change'>Services</span></h1>
                 <div className='services'>
-                    <div className = 'services-box'>
+                    <div className = 'services-box hover-effect'>
                         <div className='icon-box'>
                             <img src={DesignerIcon} alt="Design Icon"/>
                         </div>
