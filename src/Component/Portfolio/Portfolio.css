@@ -63,7 +63,7 @@
   transform: translate(-50%, -50%);
   width: 100%;
   height: 100%;
-  background-color: #04a072;
+  background-color: var(--primary-color);
   border-radius: 10px;
   opacity: 0;
   transition: 0.2s ease-in;
