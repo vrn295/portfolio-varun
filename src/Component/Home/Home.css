@@ -2,8 +2,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 
 body {
-  background-color: #171717;
-  color: whitesmoke;
+  background-color: var(--background-color);
+  color: var(--secondary-color);
   font-family: Poppins;
   margin: 0;
   padding: 0;
@@ -28,6 +28,22 @@ html[theme-color="blue"] {
 }
 html[theme-color="purple"] {
   --primary-color: #481380;
+}
+html[background-color="white"] {
+  --background-color: #fff;
+  --secondary-color: #171717;
+}
+html[background-color="light"] {
+  --background-color: #dee4e7;
+  --secondary-color: #171717;
+}
+html[background-color="dark"] {
+  --background-color: #37474f;
+  --secondary-color: white;
+}
+html[background-color="black"] {
+  --background-color: #171717;
+  --secondary-color: white;
 }
 
 /* body {
