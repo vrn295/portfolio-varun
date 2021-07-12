@@ -133,9 +133,13 @@ textarea::placeholder {
   outline: none;
 } */
 
-.btn:hover {
-  background-color: #049b6d;
+.btn {
+  cursor: pointer;
 }
+
+/* .btn:hover {
+  background-color: #049b6d;
+} */
 
 @media (max-width: 1200px) {
   .contact-me {

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './ColorModal.css'
 import {connect} from 'react-redux'
 import { useDispatch } from "react-redux";

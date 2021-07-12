@@ -1,20 +1,20 @@
 import './Home.css';
 
 // Importing Icon from Iconify
-import { Icon, InlineIcon } from '@iconify/react';
+import { Icon } from '@iconify/react';
 import facebookFill from '@iconify/icons-akar-icons/facebook-fill';
 import linkedinIcon from '@iconify/icons-bi/linkedin';
 import githubFill from '@iconify/icons-akar-icons/github-fill';
 import instagramFill from '@iconify/icons-akar-icons/instagram-fill';
 import settingIcon from '@iconify/icons-uil/setting';
 import mail16Filled from '@iconify/icons-fluent/mail-16-filled';
+
 import ColorModal from './ColorModal';
 import { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
 
-import Footer from "../Footer/Footer"
-
 const Home = () => {
+
     const color = useSelector(state => state);
     const [colorModalStatus, setColorModalStatus] = useState(false)
 

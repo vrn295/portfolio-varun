@@ -72,3 +72,30 @@
 .dark{
   background-color: #37474f;
 }
+
+@media (max-width: 1200px){
+  .color-box{
+    right: 8vw;
+    width: 12vw;
+  }
+  .color-box p{
+    font-size: 1rem;
+  }
+  .color-box li{
+    width: 3vw;
+    height: 3vw;
+  }
+}
+@media (max-width: 600px){
+  .color-box{
+    right: 10vw;
+    width: 24vw;
+  }
+  .color-box p{
+    font-size: 0.9rem;
+  }
+  .color-box li{
+    width: 7vw;
+    height: 7vw;
+  }
+}
