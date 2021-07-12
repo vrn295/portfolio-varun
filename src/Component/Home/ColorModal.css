@@ -4,8 +4,8 @@
   top: 50%;
   transform: translateY(-50%);
   display: none;
-  width: 3vw;
-  height: 10vw;
+  width: 6vw;
+  height: auto;
   display: flex;
   padding: 10px;
   border-radius: 10px;
@@ -13,6 +13,20 @@
   justify-content: center;
   align-items: center;
   background-color: whitesmoke;
+}
+
+.color-box p {
+   font-size: 0.8rem;
+   color: var(--primary-color);
+   text-align: center;
+}
+
+.color-box div{
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: auto auto;
+  column-gap: 0.5rem;
+  row-gap: 0.2rem;
 }
 
 .color-box li {
@@ -44,4 +58,17 @@
 
 .purple {
   background-color: #481380;
+}
+
+.black {
+  background-color: #171717;
+}
+.white{
+  background-color: #fff;
+}
+.light{
+  background-color: #dee4ef;
+}
+.dark{
+  background-color: #37474f;
 }
