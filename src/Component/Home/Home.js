@@ -9,30 +9,19 @@ import instagramFill from '@iconify/icons-akar-icons/instagram-fill';
 import settingIcon from '@iconify/icons-uil/setting';
 import mail16Filled from '@iconify/icons-fluent/mail-16-filled';
 import ColorModal from './ColorModal';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import { useSelector } from 'react-redux';
+
+import Footer from "../Footer/Footer"
 
 const Home = () => {
+    const color = useSelector(state => state);
     const [colorModalStatus, setColorModalStatus] = useState(false)
 
     var firstName = "Varun";
     var firstNameArray = firstName.split('');
     var lastName = "Kumar";
     var lastNameArray = lastName.split('');
-    const colorOptions = () => {
-        var temp = document.getElementsByClassName('color-change');
-        temp.style.color = '#101010 !important';
-        // var hover = document.getElementsByClassName('hover-efffect');
-
-    }
-     
-    const colorChange = () =>{
-        const html = document.querySelector('html')
-        html.setAttribute('theme-color', 'pink')
-    }
-
-    const colorsOption = () => {
-        
-    }
     
     return(
         <div className='home-container'>
@@ -56,17 +45,53 @@ const Home = () => {
                 <p>I'm a <span className=''>Web Developer</span></p>
             </div>
             <div className='social-media-icons'>
-                <a href="https://www.facebook.com/profile.php?id=100004948182828" target='_blank'><Icon icon={facebookFill} style={{fontSize: '1.5rem'}} /></a>
-                <a href="https://www.instagram.com/vrn_295/" target='_blank'><Icon icon={instagramFill} style={{fontSize: '1.5rem'}} /></a>
-                <a href="https://www.linkedin.com/in/varun-kumar-0065851a7/" target='_blank'><Icon icon={linkedinIcon} style={{fontSize: '1.5rem'}} /></a>
-                <a href="https://github.com/vrn295" target='_blank'><Icon icon={githubFill} style={{fontSize: '1.5rem'}} /></a>
+                <a href="https://www.facebook.com/profile.php?id=100004948182828" target='_blank'>
+                    <Icon 
+                        icon={facebookFill} 
+                        style={{fontSize: '1.5rem'}}
+                        color={color.backgroundColor.secondaryColor}
+                    />
+                </a>
+                <a href="https://www.instagram.com/vrn_295/" target='_blank'>
+                    <Icon 
+                        icon={instagramFill} 
+                        style={{fontSize: '1.5rem'}}
+                        color={color.backgroundColor.secondaryColor}
+                    />
+                </a>
+                <a href="https://www.linkedin.com/in/varun-kumar-0065851a7/" target='_blank'>
+                    <Icon 
+                        icon={linkedinIcon} 
+                        style={{fontSize: '1.5rem'}} 
+                        color={color.backgroundColor.secondaryColor}
+                    />
+                </a>
+                <a href="https://github.com/vrn295" target='_blank'>
+                    <Icon 
+                        icon={githubFill} 
+                        style={{fontSize: '1.5rem'}} 
+                        color={color.backgroundColor.secondaryColor}
+                    />
+                </a>
             </div>
             <div className='message-icons'>
                 <div className='color-setting-container'>
-                    <a  onClick = {() => {setColorModalStatus(!colorModalStatus)}} ><Icon icon={settingIcon} style={{fontSize: '2rem'}} /></a>
+                    <a onClick = {() => {setColorModalStatus(!colorModalStatus)}} >
+                        <Icon 
+                            icon={settingIcon} 
+                            style={{fontSize: '2rem'}}
+                            color={color.backgroundColor.secondaryColor} 
+                        />
+                    </a>
                       { colorModalStatus && <ColorModal />}  
                 </div> 
-                <a href="mailto:varun.org295@gmail.com?Subject=Hello Varun"><Icon icon={mail16Filled} style={{fontSize: '2rem'}} /></a>
+                <a href="mailto:varun.org295@gmail.com?Subject=Hello Varun">
+                    <Icon 
+                        icon={mail16Filled} 
+                        style={{fontSize: '2rem'}}
+                        color={color.backgroundColor.secondaryColor}
+                    />
+                </a>
             </div>
         </div>
     )

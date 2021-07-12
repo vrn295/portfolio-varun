@@ -4,9 +4,9 @@
   position: fixed;
   top: 0%;
   left: 0%;
-  background-color: black !important;
+  background-color: var(--background-accent);
   transform: translateX(100%);
-  transition: transform 0.5s ease-in;
+  transition: transform 0.3s ease-in;
   z-index: 2;
 }
 
@@ -35,7 +35,7 @@
 
 .nav-list li a {
   text-decoration: none;
-  color: whitesmoke;
+  color: var(--secondary-color);
 }
 
 .hamburger {
@@ -52,7 +52,7 @@
   height: 4px;
   margin: 4px;
   border-radius: 3px;
-  background-color: whitesmoke;
+  background-color: var(--secondary-color);
   transition: 0.2s ease-in;
 }
 
