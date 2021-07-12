@@ -18,7 +18,7 @@ const Contact = () => {
     function sendEmail(e) {
         e.preventDefault();
 
-        emailjs.sendForm('service_c9fpri7', 'template_eq6vsmq', e.target, 'user_3BIAqWrBGSgeAMWtWPQt')
+        emailjs.sendForm('service_c9fpri7', 'template_eq6vsmq', e.target, 'user_3BIAqWrBGSgeAMWtWPQtP')
           .then((result) => {
             toast.success('Message send successfully, Thank You.', {
                 position: "bottom-right",
