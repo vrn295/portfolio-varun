@@ -6,19 +6,39 @@ import emailIcon from '@iconify-icons/carbon/email';
 import phoneIcon from '@iconify-icons/akar-icons/phone';
 import locationAlt from '@iconify-icons/dashicons/location-alt';
 
+import {toast} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+
 import emailjs from 'emailjs-com';
+import Footer from '../Footer/Footer';
 
 const Contact = () => {
+    toast.configure()
     function sendEmail(e) {
         e.preventDefault();
-    
+
         emailjs.sendForm('service_c9fpri7', 'template_eq6vsmq', e.target, 'user_3BIAqWrBGSgeAMWtWPQtP')
           .then((result) => {
-              console.log(result.text);
-              alert('Thank You')
+            toast.success('Message send successfully, Thank You.', {
+                position: "bottom-right",
+                autoClose: 5000,
+                hideProgressBar: true,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+            });
           }, (error) => {
-              console.log(error.text);
-              alert('Try Again')
+            toast.error('Please try again later.', {
+                position: "bottom-right",
+                autoClose: 5000,
+                hideProgressBar: true,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+            });
           });
       }
     return(
@@ -59,6 +79,7 @@ const Contact = () => {
                     </div>
                 </div>
             </div>
+            <Footer />
         </div>
     )
 } 

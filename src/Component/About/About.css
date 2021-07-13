@@ -68,14 +68,14 @@
 }
 
 .services-box {
-  background-color: #202020;
+  background-color: var(--background-accent);
   width: 30vw;
   height: 30vw;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  transition: 0.5s ease-in;
+  transition: 0.3s ease-in;
 }
 
 .icon-box {
@@ -199,7 +199,7 @@
   border: 7px solid transparent;
   border-bottom-width: 0px;
   border-right-width: 0px;
-  border-top-color: #000;
+  border-top-color: var(--background-accent);
   opacity: 0;
   animation: showText2 0.5s 1.5s linear forwards;
 }
@@ -208,7 +208,7 @@
   top: -28px;
   right: 0;
   font-weight: 500;
-  background: #000;
+  background: var(--background-accent);
   color: var(--secondary-color);
   padding: 1px 8px;
   font-size: 12px;

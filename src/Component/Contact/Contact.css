@@ -4,7 +4,6 @@
   flex-direction: column;
   align-items: center;
   font-family: Poppins;
-  color: whitesmoke;
 }
 
 .contact-deatils {
@@ -49,16 +48,22 @@
   max-height: 15vh;
   min-height: 4vh;
   padding: 1vw;
-  background-color: black;
+  background-color: var(--background-accent);
+  color: var(--secondary-color);
   border-radius: 10px;
   border: none;
   margin-bottom: 25px;
   font-family: Poppins;
   /* font-weight: bold; */
   font-size: 1.2vw;
-  color: whitesmoke;
 }
 
+input::placeholder {
+  color: var(--secondary-color);
+}
+textarea::placeholder {
+  color: var(--secondary-color);
+}
 .btn {
   background-color: var(--primary-color);
   width: 8vw;
@@ -84,6 +89,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  color: white;
 }
 
 .info-cards {
@@ -127,9 +133,13 @@
   outline: none;
 } */
 
-.btn:hover {
-  background-color: #049b6d;
+.btn {
+  cursor: pointer;
 }
+
+/* .btn:hover {
+  background-color: #049b6d;
+} */
 
 @media (max-width: 1200px) {
   .contact-me {

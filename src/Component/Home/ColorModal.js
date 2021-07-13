@@ -1,14 +1,24 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './ColorModal.css'
-export default function ColorModal() {
+import {connect} from 'react-redux'
+import { useDispatch } from "react-redux";
+import { modalPrimary , modalBackground } from "../Redux/action/action";
+
+function ColorModal() {
+
+    const dispatch = useDispatch();
+
     const colorModalPrimary = (color) =>{
         var htmlElement = document.querySelector('html')
         htmlElement.setAttribute('theme-color',color)
+        dispatch(modalPrimary(color))
     }
     const colorModalBackground = (color) =>{
         var htmlElement = document.querySelector('html')
-        htmlElement.setAttribute('background-color',color)
+        htmlElement.setAttribute('background-color', color)
+        dispatch(modalBackground(color))
     }
+
     return (
         <>
             <ul className='color-box'>
@@ -30,3 +40,6 @@ export default function ColorModal() {
         </>
     )
 }
+
+
+export default ColorModal

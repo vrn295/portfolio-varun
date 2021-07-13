@@ -11,8 +11,14 @@ import Contact from './Contact/Contact';
 import Portfolio from './Portfolio/Portfolio';
 import Services from './Services/Services';
 import Navbar from './Navbar/Navbar';
+import { useEffect } from "react";
 
 const App = () => {
+  useEffect(() => {
+    var htmlElement = document.querySelector('html')
+        htmlElement.setAttribute('background-color', "black")
+  },[])
+  
   return (
     <div className="App">
       <Router>
