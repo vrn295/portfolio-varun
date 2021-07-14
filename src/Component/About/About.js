@@ -14,9 +14,9 @@ const About = () => {
             </div>
             <div className='about-details'>
                 <div className='about-details-text'>
-                    <h2>I'm 
-                        <span className='color-change'>Web Developer</span> & 
-                        <span className='color-change'>Graphic Designer</span> 
+                    <h2>I'm
+                        <span className='color-change'> Web Developer</span> & 
+                        <span className='color-change'> Graphic Designer </span> 
                         based in Delhi, India
                     </h2>
                     <p>I'm interested in all kinds of visual communication, but my major focus is on designing web, mobile & tablet interfaces. I also have skills in other fields like branding, icon design or web development.</p>
