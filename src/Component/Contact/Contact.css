@@ -202,7 +202,11 @@ textarea::placeholder {
 }
 
 @media (max-width: 500px) {
+  .contact-container{
+    margin-top: 80px;
+  }
   .contact-me {
+    margin-bottom: 50px;
     font-size: 8vw;
   }
 
@@ -213,22 +217,27 @@ textarea::placeholder {
   .contact-form input,
   .contact-form textarea {
     font-size: 3vw;
+    min-width: 65vw;
+    max-width: 65vw;
+    padding-left: 3vw;
+    padding-right: 3vw;
   }
   .contact-form button {
     padding: 2vw 4vw;
     font-size: 3vw;
   }
   .contact-info {
+    min-width: 70vw;
     grid-template-columns: 20vw 20vw;
     grid-gap: 20px;
-    grid-column-gap: 15vw;
+    grid-column-gap: 10vw;
   }
   .info-cards {
     grid-template-rows: 4vw 4vw;
-    grid-template-columns: 10vw 24vw;
+    grid-template-columns: 8vw 24vw;
   }
   .info-cards svg {
-    font-size: 8vw;
+    font-size: 6vw;
   }
 
   .info-cards p {

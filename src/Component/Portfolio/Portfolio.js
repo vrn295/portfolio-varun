@@ -1,8 +1,5 @@
 import './Portfolio.css';
 import {portfolioData} from './PortfolioData'
-
-import Footer from '../Footer/Footer'
-
 import TrimEmpire from '../Media/Trim-Empire.png'  
 import Zephyr from '../Media/Zephyr.png'  
 import PigGame from '../Media/Pig-Game.png'  
@@ -13,19 +10,6 @@ const Portfolio = () => {
         <div className='portfolio-container'>
             <h1 className='my-portfolio'>My <span className='color-change'>Portfolio</span></h1>
             <div className='my-work'>
-            {/* <ul className='portfolio-list'>
-                {portfolioData.map((data, key) =>{
-                    return (
-                        <div>
-                            <img src={require('../Media/pexels-pixabay-33545.jpg')} alt={`${data.name}No imgae`}></img>
-                            {console.log(data.img)}
-                            <h2>{data.name}</h2>
-                            <p>{data.detail}</p>
-                        </div>
-                        
-                    )
-                } )}
-            </ul> */}
                 <div className='work-list'>
                     <img src={TrimEmpire} alt="Trim-Empire"/>
                     <div className='portfolio-overlay'></div>
@@ -63,7 +47,6 @@ const Portfolio = () => {
                     </caption>
                 </div>
             </div>
-            <Footer />
         </div>
     )
 } 

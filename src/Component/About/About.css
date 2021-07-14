@@ -263,7 +263,7 @@
     font-size: 2vw;
   }
   .about-details img {
-    margin-top: 5vw;
+    margin-top: 7vw;
     max-width: 60vw;
   }
   .services {
@@ -296,6 +296,9 @@
   #skill-bars {
     width: 80vw;
   }
+  #skill-bars #bar #progress-line{
+    height: 8px;
+  }
   .btn-download-cv {
     width: 20vw !important;
     padding: 1.5vw 1.5vw !important;
@@ -308,6 +311,15 @@
 }
 
 @media (max-width: 500px) {
+  .about-container {
+    margin-top: 60px;
+  }
+  .about-details-text{
+    max-width: 70vw;
+  }
+  #skill-bars{
+    width: 70vw;
+  }
   .about-h1 {
     font-size: 8vw;
   }

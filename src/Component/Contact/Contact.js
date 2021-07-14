@@ -1,6 +1,5 @@
 import './Contact.css';
-// npm install --save-dev @iconify/react @iconify-icons/gg
-import { Icon, InlineIcon } from '@iconify/react';
+import { Icon } from '@iconify/react';
 import profileIcon from '@iconify-icons/gg/profile';
 import emailIcon from '@iconify-icons/carbon/email';
 import phoneIcon from '@iconify-icons/akar-icons/phone';
@@ -11,14 +10,13 @@ import 'react-toastify/dist/ReactToastify.css';
 
 
 import emailjs from 'emailjs-com';
-import Footer from '../Footer/Footer';
 
 const Contact = () => {
+    const phoneNumber = "+91 9582744682"
     toast.configure()
-    function sendEmail(e) {
-        e.preventDefault();
 
-        emailjs.sendForm('service_c9fpri7', 'template_eq6vsmq', e.target, 'user_3BIAqWrBGSgeAMWtWPQtP')
+    function sendEmail(e) {
+        e.preventDefault();emailjs.sendForm('service_c9fpri7', 'template_eq6vsmq', e.target, 'user_3BIAqWrBGSgeAMWtWPQtP')
           .then((result) => {
             toast.success('Message send successfully, Thank You.', {
                 position: "bottom-right",
@@ -41,6 +39,7 @@ const Contact = () => {
             });
           });
       }
+      
     return(
         <div className='contact-container'>
             <h1 className='contact-me'>Contact <span className='color-change'>Me</span></h1>
@@ -65,21 +64,25 @@ const Contact = () => {
                     <div className="info-cards">
                         <Icon icon={locationAlt} />
                         <h4>Location</h4>
-                        <p>Delhi India</p>
+                        <p>Delhi, India</p>
                     </div>
-                    <div className="info-cards">
+                    <div className="info-cards" 
+                        style={{cursor: "pointer"}}
+                        onClick={() => {
+                            window.open(`tel:${phoneNumber}`, '_self')
+                        }}
+                    >
                         <Icon icon={phoneIcon} />
                         <h4>Phone Number</h4>
                         <p>+91 9582744682</p>
                     </div>
-                    <div className="info-cards">
-                        <Icon icon={emailIcon} />
-                        <h4>E-Mail</h4>
-                        <p>varun.org295@gmail.com</p>
-                    </div>
+                        <a href="mailto:varun.org295@gmail.com?Subject=Hello Varun" className="info-cards" style={{color: "white", textDecoration: "none"}}>
+                            <Icon icon={emailIcon} />
+                            <h4>E-Mail</h4>
+                            <p>varun.org295@gmail.com</p>
+                        </a>
                 </div>
             </div>
-            <Footer />
         </div>
     )
 } 
