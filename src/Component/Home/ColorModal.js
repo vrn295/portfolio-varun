@@ -1,6 +1,5 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import './ColorModal.css'
-import {connect} from 'react-redux'
 import { useDispatch } from "react-redux";
 import { modalPrimary , modalBackground } from "../Redux/action/action";
 
@@ -20,7 +19,7 @@ function ColorModal() {
     }
 
     return (
-        <>
+        <React.Fragment>
             <ul className='color-box'>
                 <p>Primary Color</p>
                 <div>
@@ -37,7 +36,7 @@ function ColorModal() {
                 <li onClick= {() => {colorModalBackground('dark')}} className='dark'></li>
                 </div>
             </ul>
-        </>
+        </React.Fragment>
     )
 }
 

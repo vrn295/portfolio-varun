@@ -118,11 +118,17 @@ span {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  position: absolute;
+  position: fixed;
   left: 5%;
+  transition: 0.2s ease;
   transform: translateY(-50%);
   animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
+
+.social-media-icons-scroll {
+  left: 2%;
+}
+
 .social-media-icons svg,
 .message-icons svg {
   margin: 5px;
@@ -146,10 +152,15 @@ span {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  position: absolute;
+  position: fixed;
   right: 5%;
+  transition: 0.5s ease;
   transform: translateY(-50%);
   animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.message-icons-scroll {
+  right: 2%;
 }
 
 .color-setting-container {
@@ -217,10 +228,18 @@ span {
   }
 
   .social-media-icons svg {
+    pointer-events: none;
     font-size: 1rem !important;
   }
   .message-icons svg {
+    pointer-events: none;
     font-size: 1.5rem !important;
+  }
+  .social-media-icons-scroll{
+    right: 2.5%;
+  }
+  .message-icons-scroll{
+    right: 2.5%;
   }
 }
 

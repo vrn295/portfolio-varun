@@ -1,6 +1,6 @@
 import './Footer.css';
 
-import { Icon, InlineIcon } from '@iconify/react';
+import { Icon } from '@iconify/react';
 import facebookFill from '@iconify/icons-akar-icons/facebook-fill';
 import linkedinIcon from '@iconify/icons-bi/linkedin';
 import githubFill from '@iconify/icons-akar-icons/github-fill';
