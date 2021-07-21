@@ -127,7 +127,35 @@ span {
   height: 50px;
   font-family: Raleway;
   font-style: normal;
+  transition: 0.3s ease;
 }
+/* Float Up Animation */
+/* .move-up {
+  position: relative;
+  -webkit-animation: floatBubble 1s normal ease-out; 
+  -webkit-animation-fill-mode: forwards;
+  animation: floatBubble 1s normal ease-out;
+  animation-fill-mode: forwards;
+  
+} */
+/* @-webkit-keyframes floatBubble {
+  0% {
+      top:500px;
+  }
+  100% {
+      top: 0px;
+  }
+} */
+/* @keyframes floatBubble {
+  0% {
+      top:0%;
+      opacity: 100%;
+  }
+  100% {
+      top: -50%;
+      opacity: 0%;
+  }
+} */
 
 .typewriter p {
   overflow: hidden; /* Ensures the content is not revealed until the animation */
@@ -163,6 +191,35 @@ span {
 
 .social-media-icons-scroll {
   left: 2%;
+}
+
+.social-media-icons-scroll-end {
+  /* flex-direction: row;
+  left: auto;
+  bottom: 5%;
+  z-index: 10; */
+  animation: slide-to-bottom 0.5s normal ease-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slide-to-bottom {
+  0% {
+    left: 3%;
+  }
+
+  50% {
+    left: -10%;
+  }
+
+  75% {
+    left: auto;
+    bottom: -10%;
+  }
+  100% {
+  left: auto;
+  flex-direction: row;
+  bottom: 5%;
+  }
 }
 
 .social-media-icons svg,

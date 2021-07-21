@@ -12,7 +12,7 @@ const Footer = () => {
     return(
         <div className='footer-container'>
             <h3>Varun Kumar</h3>
-            <div className='footer-social-media-icons'>
+            {/* <div className='footer-social-media-icons'>
                 <a href="https://www.facebook.com/profile.php?id=100004948182828" target='_blank'>
                     <Icon 
                         icon={facebookFill} 
@@ -41,7 +41,7 @@ const Footer = () => {
                         color={color.backgroundColor.secondaryColor} 
                     />
                 </a>
-            </div>
+            </div> */}
         </div>
     )
 } 

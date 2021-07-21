@@ -14,7 +14,10 @@ import ColorModal from './ColorModal';
 import { useState } from 'react';
 import { useSelector } from 'react-redux';
 
-const Home = ({isScroll}) => {
+const Home = ({
+    isScroll,
+    isScrollEnd
+}) => {
     const color = useSelector(state => state);
     const [colorModalStatus, setColorModalStatus] = useState(false)
 
@@ -27,14 +30,13 @@ const Home = ({isScroll}) => {
         <React.Fragment>
             <div className='home-container'>
                 {/* Name Container */}
-                <div className='name-container'>
+                <div className="name-container">
                     {/* Printing name letter by letter */}
                     <div className='first-name'>
                         {firstNameArray.map((letter) => (
                             <p className='name-letter'>{letter}</p>
                         ))}
-                    </div>
-                    
+                    </div> 
                     <div className='last-name'>
                         {lastNameArray.map((letter) => (
                             <p className='name-letter'>{letter}</p>
@@ -44,7 +46,7 @@ const Home = ({isScroll}) => {
                 <div className='home-discription typewriter'>
                     <p>I'm a <span className=''>Web Developer</span></p>
                 </div>
-                <div className={"social-media-icons " + (isScroll ? "social-media-icons-scroll" : "")}>
+                <div className={"social-media-icons " + (isScroll ? "social-media-icons-scroll " : "") + (isScrollEnd ? "social-media-icons-scroll-end" : "")}>
                     <a href="https://www.facebook.com/profile.php?id=100004948182828" target='_blank'>
                         <Icon 
                             icon={facebookFill} 

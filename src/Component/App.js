@@ -30,11 +30,16 @@ const App = () => {
   }
   
   const [isScroll, setIsScroll] = useState(false)
+  const [isScrollEnd, setIsScrollEnd] = useState(false)
 
   const scrollHandle = () => {
-    window.pageYOffset > 100 ? setIsScroll(true) : setIsScroll(false)
+    window.pageYOffset > 100 ? setIsScroll(true) : setIsScroll(false);
+    // you're at the bottom of the page
+    (window.innerHeight + window.scrollY) >= document.body.offsetHeight  ?
+      setIsScrollEnd(true)
+      :
+      setIsScrollEnd(false);
   }
-
   return (
     <div className="App">
       <Navbar
@@ -46,7 +51,10 @@ const App = () => {
         handleScrollClick={handleScrollClick}
       />
       <div ref={home}>
-        <Home isScroll={isScroll}/>
+        <Home 
+          isScroll={isScroll}
+          isScrollEnd={isScrollEnd}  
+        />
       </div>
       <div ref={about}>
         <About />
