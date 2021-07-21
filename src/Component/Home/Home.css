@@ -9,6 +9,20 @@ body {
   padding: 0;
 }
 
+body::-webkit-scrollbar {
+  width: 10px;      
+  margin-right: 10px;         /* width of the entire scrollbar */
+}
+
+/* body::-webkit-scrollbar-track { */
+  /* background: orange;       color of the tracking area  */
+/* } */
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(255, 255, 255);    /* color of the scroll thumb */
+  border-radius: 20px;  
+}
+
 html,
 body {
   overflow-x: hidden !important;
