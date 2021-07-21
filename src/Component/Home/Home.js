@@ -41,7 +41,7 @@ const Home = ({isScroll}) => {
                         ))}
                     </div>
                 </div>
-                <div className='home-discription'>
+                <div className='home-discription typewriter'>
                     <p>I'm a <span className=''>Web Developer</span></p>
                 </div>
                 <div className={"social-media-icons " + (isScroll ? "social-media-icons-scroll" : "")}>
@@ -76,7 +76,12 @@ const Home = ({isScroll}) => {
                 </div>
                 <div className={"message-icons " + (isScroll ? "message-icons-scroll" : "")}>
                     <div className='color-setting-container' style={{zIndex: "10"}}>
-                        <div onClick = {() => {setColorModalStatus(!colorModalStatus)}} >
+                        <div style={{position: "relative"}} onClick = {() => {setColorModalStatus(!colorModalStatus)}} >
+                            {/* <p 
+                                className="setting-text"
+                                style={isScroll ? {opacity: "0"}: {}}
+                            >Choose your<br/>Comfort
+                            </p> */}
                             <Icon 
                                 icon={settingIcon} 
                                 style={{fontSize: '2rem'}}
