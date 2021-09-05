@@ -102,10 +102,6 @@
   top: 50%;
 }
 
-.services-box:hover p{
-  opacity: 100%;
-}
-
 .icon-box {
   display: flex;
   flex-direction: column;
@@ -136,7 +132,6 @@
   max-width: 25vw;
   opacity: 0.8;
   z-index: 1;
-  transition: 0.3s;
 }
 
 /* .services-box:hover {
