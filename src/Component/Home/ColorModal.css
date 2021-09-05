@@ -1,10 +1,9 @@
 .color-box {
-  z-index: 1000;
+  z-index: 10;
   position: absolute;
   right: 4vw;
   top: 50%;
   transform: translateY(-50%);
-  display: none;
   width: 6vw;
   height: auto;
   display: flex;

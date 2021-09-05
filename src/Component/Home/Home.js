@@ -74,8 +74,8 @@ const Home = ({isScroll}) => {
                         />
                     </a>
                 </div>
-                <div className={"message-icons " + (isScroll ? "message-icons-scroll" : "")}>
-                    <div className='color-setting-container' style={{zIndex: "10"}}>
+                <div className={"message-icons " + (isScroll ? "message-icons-scroll" : "")} style={{zIndex: "10"}}>
+                    <div className='color-setting-container'>
                         <div style={{position: "relative"}} onClick = {() => {setColorModalStatus(!colorModalStatus)}} >
                             {/* <p 
                                 className="setting-text"

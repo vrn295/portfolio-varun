@@ -24,7 +24,7 @@ const About = () => {
                         <a href={Resume2021} download='Varun-Resume'>Download CV</a>
                     </button>
                 </div>
-                <img src={AboutImage} alt="My Photo"/>
+                <img src={AboutImage} alt="My Photo" />
             </div>
             <div className='my-services'>
                 <h1 className='my-skills about-h1'>My <span className='color-change'>Services</span></h1>
@@ -33,15 +33,15 @@ const About = () => {
                         <div className='icon-box'>
                             <img src={DesignerIcon} alt="Design Icon"/>
                         </div>
-                        <h2>Web Designing</h2>
-                        <p>I value simple content structure, clean design patterns, and thoughful interactions.</p>
+                        <h2>Web Developer</h2>
+                        <p>I like to code things from scratch, and enjoy bringing ideas to life in the browser.</p>
                     </div>
                     <div className = 'services-box'>
                         <div className='icon-box'>
                             <img src={WebDeveloperIcon} alt="Web Developer Icon"/>
                         </div>
                             <h2>Graphic Designer</h2>
-                            <p>I like to code things from scratch, and enjoy bringing ideas to life in the browser.</p>
+                            <p>I value simple content structure, clean design patterns, and thoughful interactions.</p>
                     </div>
                 </div>
             </div>
