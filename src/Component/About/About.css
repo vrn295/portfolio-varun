@@ -102,6 +102,10 @@
   top: 50%;
 }
 
+.services-box:hover p{
+  opacity: 100%;
+}
+
 .icon-box {
   display: flex;
   flex-direction: column;
@@ -117,11 +121,13 @@
 .services img {
   max-height: 5vw;
   width: auto;
+  z-index: 1;
 }
 
 .services h2 {
   margin-top: 3vw;
   font-size: 2.5vw;
+  z-index: 1;
 }
 
 .services p {
@@ -129,6 +135,8 @@
   text-align: center;
   max-width: 25vw;
   opacity: 0.8;
+  z-index: 1;
+  transition: 0.3s;
 }
 
 /* .services-box:hover {
