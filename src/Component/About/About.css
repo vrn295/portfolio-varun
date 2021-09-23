@@ -112,6 +112,7 @@
   width: 8vw;
   margin-top: 2vw;
   height: 8vw;
+  transition: 0.3s ease-in;
 }
 
 .services img {
@@ -196,6 +197,7 @@
   transform: scaleX(0);
   transform-origin: left;
   background: var(--primary-color);
+  transition: 0.3s ease-in;
   animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
 }
 #bar #progress-line.html .span {
@@ -242,6 +244,7 @@
   border-radius: 3px;
   opacity: 0;
   animation: showText2 0.5s 1.5s linear forwards;
+  transition: 0.3 ease-in;
 }
 @keyframes showText2 {
   100% {

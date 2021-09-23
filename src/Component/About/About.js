@@ -5,8 +5,10 @@ import AboutImage from '../Media/WhatsApp Image 2020-11-24 at 5.57.13 PM.jpeg'
 import WebDeveloperIcon from '../Media/Web developer icon.png'
 import DesignerIcon from '../Media/Designer icon.png'
 import Resume2021 from '../Media/Resume2021.pdf'
+import { useSelector } from 'react-redux';
 
 const About = () => {
+    const color = useSelector(state => state);
     return(
         <div className='about-container'>
             <div>
@@ -31,14 +33,14 @@ const About = () => {
                 <div className='services'>
                     <div className = 'services-box hover-effect'>
                         <div className='icon-box'>
-                            <img src={DesignerIcon} alt="Design Icon"/>
+                            <img style={(color.backgroundColor.name === "white" || color.backgroundColor.name === "light")?{filter: "brightness(0)"}:{  }} src={WebDeveloperIcon} alt="Web Developer Icon"/>
                         </div>
                         <h2>Web Developer</h2>
                         <p>I like to code things from scratch, and enjoy bringing ideas to life in the browser.</p>
                     </div>
                     <div className = 'services-box'>
                         <div className='icon-box'>
-                            <img src={WebDeveloperIcon} alt="Web Developer Icon"/>
+                            <img style={(color.backgroundColor.name === "white" || color.backgroundColor.name === "light")?{filter: "brightness(0)"}:{  }} src={DesignerIcon} alt="Design Icon"/>
                         </div>
                             <h2>Graphic Designer</h2>
                             <p>I value simple content structure, clean design patterns, and thoughful interactions.</p>
