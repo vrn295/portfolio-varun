@@ -53,6 +53,15 @@ const Home = ({isScroll}) => {
         document.addEventListener('mousedown', handleClickOutside);
         return () => document.removeEventListener('mousedown', handleClickOutside);
     });
+
+    const [isAnimateSetting, setIsAnimateSetting] = useState(false)
+
+    useEffect(() => {
+        let timer = setTimeout(() => setIsAnimateSetting(true), 5000)
+        return () => {
+            clearTimeout(timer)
+        }
+    }, [])
     
     return(
         <React.Fragment>
@@ -117,6 +126,7 @@ const Home = ({isScroll}) => {
                                 icon={settingIcon} 
                                 style={{fontSize: '2rem'}}
                                 color={color.backgroundColor.secondaryColor} 
+                                className={isAnimateSetting ? "setting-icon" : ""}
                             />
                         </div>
                         { colorModalStatus && 
@@ -130,10 +140,10 @@ const Home = ({isScroll}) => {
                                 </div>
                                 <p>Background Color</p>
                                 <div>
-                                <li onClick = {() => {colorModalBackground("black")}} className='black'></li>
-                                <li onClick = {() => {colorModalBackground("white")}} className='white'></li>
-                                <li onClick= {() => {colorModalBackground("light")}} className='light'></li>
-                                <li onClick= {() => {colorModalBackground('dark')}} className='dark'></li>
+                                    <li onClick = {() => {colorModalBackground("black")}} className='black'></li>
+                                    <li onClick = {() => {colorModalBackground("white")}} className='white'></li>
+                                    <li onClick= {() => {colorModalBackground("light")}} className='light'></li>
+                                    <li onClick= {() => {colorModalBackground('dark')}} className='dark'></li>
                                 </div>
                             </ul>
                         }  
@@ -146,7 +156,13 @@ const Home = ({isScroll}) => {
                         />
                     </a>
                 </div>
-            </div>
+            </div>  
+            {<div className={`${isScroll ? "color-selection-tab-scroll" : "color-selection-tab-bottom"}`}>
+                    <div className={color.primaryColor === "default" || color.primaryColor?.name === "primary" || color.primaryColor === "" ? "selected-color" : ""}><li onClick = {() => {colorModalPrimary("default")}} className='default'></li></div>
+                    <div className={color.primaryColor === "pink" ? "selected-color" : ""}><li onClick = {() => {colorModalPrimary("pink")}} className='pink'></li></div>
+                    <div className={color.primaryColor === "blue" ? "selected-color" : ""}><li onClick= {() => {colorModalPrimary("blue")}} className='blue'></li></div>
+                    <div className={color.primaryColor === "purple" ? "selected-color" : ""}><li onClick= {() => {colorModalPrimary('purple')}} className='purple'></li></div>
+            </div>}
         </React.Fragment>
     )
 } 

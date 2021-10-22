@@ -39,10 +39,25 @@ const Contact = () => {
             });
           });
       }
+
+    let first_letter = "Contact"
+    let second_letter = "Me"
+    first_letter = first_letter.split("")
+    second_letter = second_letter.split("")
       
     return(
         <div className='contact-container'>
-            <h1 className='contact-me'>Contact <span className='color-change'>Me</span></h1>
+            <h1 className='contact-me hover-name-container'>
+                {first_letter.map((letter) => 
+                    <p className='name-letter'>{letter}</p>
+                )} 
+                <p>&nbsp;</p>
+                <span className='color-change hover-name-container'>
+                    {second_letter.map((letter) => 
+                        <p className='name-letter'>{letter}</p>
+                    )}
+                </span>
+            </h1>
             <div className='contact-deatils'>
                 <div className='contact-form'>
                     <h3>Message Me</h3>
@@ -56,15 +71,25 @@ const Contact = () => {
                 </div>
                 <div className='contact-info'>
                     {/* <h3>Contact Info</h3> */}
-                    <div className="info-cards">
+                    <div className="info-cards"
+                        style={{cursor: "pointer"}}
+                        onClick={() => {
+                            window.open(`https://www.linkedin.com/in/vrn295/`, '_blank')
+                        }}
+                    >
                         <Icon icon={profileIcon} />
                         <h4>Name</h4>
                         <p>Varun Kumar</p>
                     </div>
-                    <div className="info-cards">
+                    <div className="info-cards"
+                        style={{cursor: "pointer"}}
+                        onClick={() => {
+                            window.open(`https://goo.gl/maps/nAy8mB88nVT6bA638`, '_blank')
+                        }}
+                    >
                         <Icon icon={locationAlt} />
                         <h4>Location</h4>
-                        <p>Delhi, India</p>
+                        <p>Shahdara, Delhi, India</p>
                     </div>
                     <div className="info-cards" 
                         style={{cursor: "pointer"}}

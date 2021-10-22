@@ -8,11 +8,35 @@ import Resume2021 from '../Media/Resume2021.pdf'
 import { useSelector } from 'react-redux';
 
 const About = () => {
+    let first_letter = "About"
+    let second_letter = "Me"
+    first_letter = first_letter.split("")
+    second_letter = second_letter.split("")
+    
+    let first_letter_2 = "My"
+    let second_letter_2 = "Services"
+    first_letter_2 = first_letter_2.split("")
+    second_letter_2 = second_letter_2.split("")
+
+    let first_letter_3 = "My"
+    let second_letter_3 = "Skills"
+    first_letter_3 = first_letter_3.split("")
+    second_letter_3 = second_letter_3.split("")
     const color = useSelector(state => state);
     return(
         <div className='about-container'>
             <div>
-                <h1 className='about-me about-h1'>About <span className='color-change'>Me</span></h1>
+                <h1 className='about-me about-h1 hover-name-container'>
+                    {first_letter.map((letter) => 
+                        <p className='name-letter'>{letter}</p>
+                    )} 
+                    <p>&nbsp;</p>
+                    <span className='color-change hover-name-container'>
+                        {second_letter.map((letter) => 
+                            <p className='name-letter'>{letter}</p>
+                        )}
+                    </span>
+                </h1>
             </div>
             <div className='about-details'>
                 <div className='about-details-text'>
@@ -29,7 +53,17 @@ const About = () => {
                 <img src={AboutImage} alt="My Photo" />
             </div>
             <div className='my-services'>
-                <h1 className='my-skills about-h1'>My <span className='color-change'>Services</span></h1>
+                <h1 className='my-skills about-h1 hover-name-container'>
+                    {first_letter_2.map((letter) => 
+                        <p className='name-letter'>{letter}</p>
+                    )} 
+                    <p>&nbsp;</p>
+                    <span className='color-change hover-name-container'>
+                        {second_letter_2.map((letter) => 
+                            <p className='name-letter'>{letter}</p>
+                        )}
+                    </span>
+                </h1>
                 <div className='services'>
                     <div className = 'services-box hover-effect'>
                         <div className='icon-box'>
@@ -48,7 +82,17 @@ const About = () => {
                 </div>
             </div>
             <div className='skills'>
-                <h1 className='my-skills about-h1'>My <span className='color-change'>Skills</span></h1>
+                <h1 className='my-skills about-h1 hover-name-container'>
+                    {first_letter_3.map((letter) => 
+                        <p className='name-letter'>{letter}</p>
+                    )} 
+                    <p>&nbsp;</p>
+                    <span className='color-change hover-name-container'>
+                        {second_letter_3.map((letter) => 
+                            <p className='name-letter'>{letter}</p>
+                        )}
+                    </span>
+                </h1>
                 <div id='skill-container'>
                     <div id="skill-bars">
                         <div id="bar">

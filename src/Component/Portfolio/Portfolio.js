@@ -6,9 +6,24 @@ import PigGame from '../Media/Pig-Game.png'
 import Todo from '../Media/ToDo.png'  
 
 const Portfolio = () => {
+    let first_letter = "My"
+    let second_letter = "Portfolio"
+    first_letter = first_letter.split("")
+    second_letter = second_letter.split("")
+
     return(
         <div className='portfolio-container'>
-            <h1 className='my-portfolio'>My <span className='color-change'>Portfolio</span></h1>
+            <h1 className='my-portfolio hover-name-container'>
+                {first_letter.map((letter) => 
+                    <p className='name-letter'>{letter}</p>
+                )} 
+                <p>&nbsp;</p>
+                <span className='color-change hover-name-container'>
+                    {second_letter.map((letter) => 
+                        <p className='name-letter'>{letter}</p>
+                    )}
+                </span>
+            </h1>
             <div className='my-work'>
                 <div className='work-list'>
                     <img src={TrimEmpire} alt="Trim-Empire"/>
