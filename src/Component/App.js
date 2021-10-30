@@ -8,9 +8,13 @@ import Navbar from './Navbar/Navbar';
 import Footer from './Footer/Footer';
 
 import { useEffect } from "react";
+import InitialLoader from '../Common/InitialLoader';
 
 const App = () => {
   useEffect(() => {
+    setTimeout(() => {
+      setisLoading(false)
+    }, 3000);
     var htmlElement = document.querySelector('html')
     htmlElement.setAttribute('background-color', "black")
     
@@ -30,34 +34,40 @@ const App = () => {
   }
   
   const [isScroll, setIsScroll] = useState(false)
-
+  const [isLoading, setisLoading] = useState(true)
   const scrollHandle = () => {
     window.pageYOffset > 100 ? setIsScroll(true) : setIsScroll(false)
   }
 
   return (
     <div className="App">
-      <Navbar
-        home={home}
-        about={about}
-        portfolio={portfolio}
-        contact={contact}
-        isScroll={isScroll}
-        handleScrollClick={handleScrollClick}
-      />
-      <div ref={home}>
-        <Home isScroll={isScroll}/>
-      </div>
-      <div ref={about}>
-        <About />
-      </div>
-      <div ref={portfolio}>
-        <Portfolio />
-      </div>
-      <div ref={contact}>
-        <Contact />
-      </div>
-      <Footer />
+      {
+        isLoading && 
+        <InitialLoader /> 
+      }
+      <React.Fragment>
+        <Navbar
+            home={home}
+            about={about}
+            portfolio={portfolio}
+            contact={contact}
+            isScroll={isScroll}
+            handleScrollClick={handleScrollClick}
+          />
+          <div ref={home}>
+            <Home isScroll={isScroll}/>
+          </div>
+          <div ref={about}>
+            <About />
+          </div>
+          <div ref={portfolio}>
+            <Portfolio />
+          </div>
+          <div ref={contact}>
+            <Contact />
+          </div>
+          <Footer />
+      </React.Fragment>
     </div>
   );
 }
