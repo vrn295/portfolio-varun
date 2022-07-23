@@ -8,13 +8,13 @@ import Navbar from './Navbar/Navbar';
 import Footer from './Footer/Footer';
 
 import { useEffect } from "react";
-import InitialLoader from '../Common/InitialLoader';
+// import InitialLoader from '../Common/InitialLoader';
 
 const App = () => {
   useEffect(() => {
-    setTimeout(() => {
-      setisLoading(false)
-    }, 3000);
+    // setTimeout(() => {
+    //   setisLoading(false)
+    // }, 3000);
     var htmlElement = document.querySelector('html')
     htmlElement.setAttribute('background-color', "black")
     
@@ -34,17 +34,17 @@ const App = () => {
   }
   
   const [isScroll, setIsScroll] = useState(false)
-  const [isLoading, setisLoading] = useState(true)
+  // const [isLoading, setisLoading] = useState(true)
   const scrollHandle = () => {
     window.pageYOffset > 100 ? setIsScroll(true) : setIsScroll(false)
   }
 
   return (
     <div className="App">
-      {
+      {/* {
         isLoading && 
         <InitialLoader /> 
-      }
+      } */}
       <React.Fragment>
         <Navbar
             home={home}

@@ -85,28 +85,28 @@ const Home = ({isScroll}) => {
                     <p>I'm a <span className=''>Web Developer</span></p>
                 </div>
                 <div className={"social-media-icons " + (isScroll ? "social-media-icons-scroll" : "")}>
-                    <a href="https://www.facebook.com/profile.php?id=100004948182828" target='_blank'>
+                    <a href="https://www.facebook.com/profile.php?id=100004948182828" target='_blank' rel="noreferrer">
                         <Icon 
                             icon={facebookFill} 
                             style={{fontSize: '1.5rem'}}
                             color={color.backgroundColor.secondaryColor}
                         />
                     </a>
-                    <a href="https://www.instagram.com/vrn_295/" target='_blank'>
+                    <a href="https://www.instagram.com/vrn_295/" target='_blank' rel="noreferrer">
                         <Icon 
                             icon={instagramFill} 
                             style={{fontSize: '1.5rem'}}
                             color={color.backgroundColor.secondaryColor}
                         />
                     </a>
-                    <a href="https://www.linkedin.com/in/varun-kumar-0065851a7/" target='_blank'>
+                    <a href="https://www.linkedin.com/in/varun-kumar-0065851a7/" target='_blank' rel="noreferrer">
                         <Icon 
                             icon={linkedinIcon} 
                             style={{fontSize: '1.5rem'}} 
                             color={color.backgroundColor.secondaryColor}
                         />
                     </a>
-                    <a href="https://github.com/vrn295" target='_blank'>
+                    <a href="https://github.com/vrn295" target='_blank' rel="noreferrer">
                         <Icon 
                             icon={githubFill} 
                             style={{fontSize: '1.5rem'}} 
