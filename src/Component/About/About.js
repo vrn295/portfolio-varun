@@ -1,28 +1,25 @@
-import React from 'react'
+import React, { useRef } from 'react'
 
 import './About.css';
 import AboutImage from '../Media/WhatsApp Image 2020-11-24 at 5.57.13 PM.jpeg'
-import WebDeveloperIcon from '../Media/Web developer icon.png'
-import DesignerIcon from '../Media/Designer icon.png'
 import Resume2021 from '../Media/Resume2021.pdf'
-import { useSelector } from 'react-redux';
+// import { useSelector } from 'react-redux';
+import WorkExperience from '../WorkExperience/WorkExperience';
+import useOnScreen from '../../Common/intersectionObserver';
 
 const About = () => {
+    const ref = useRef()
+    const isVisible = useOnScreen(ref)
     let first_letter = "About"
     let second_letter = "Me"
     first_letter = first_letter.split("")
     second_letter = second_letter.split("")
-    
-    let first_letter_2 = "My"
-    let second_letter_2 = "Services"
-    first_letter_2 = first_letter_2.split("")
-    second_letter_2 = second_letter_2.split("")
 
     let first_letter_3 = "My"
     let second_letter_3 = "Skills"
     first_letter_3 = first_letter_3.split("")
     second_letter_3 = second_letter_3.split("")
-    const color = useSelector(state => state);
+    console.log(isVisible)
     return(
         <div className='about-container'>
             <div>
@@ -50,38 +47,13 @@ const About = () => {
                         <a href={Resume2021} download='Varun-Resume'>Download CV</a>
                     </button>
                 </div>
-                <img src={AboutImage} alt="My Photo" />
+                <img src={AboutImage} alt="Varun Kumar" />
             </div>
-            <div className='my-services'>
-                <h1 className='my-skills about-h1 hover-name-container'>
-                    {first_letter_2.map((letter) => 
-                        <p className='name-letter'>{letter}</p>
-                    )} 
-                    <p>&nbsp;</p>
-                    <span className='color-change hover-name-container'>
-                        {second_letter_2.map((letter) => 
-                            <p className='name-letter'>{letter}</p>
-                        )}
-                    </span>
-                </h1>
-                <div className='services'>
-                    <div className = 'services-box hover-effect'>
-                        <div className='icon-box'>
-                            <img style={(color.backgroundColor.name === "white" || color.backgroundColor.name === "light")?{filter: "brightness(0)"}:{  }} src={WebDeveloperIcon} alt="Web Developer Icon"/>
-                        </div>
-                        <h2>Web Developer</h2>
-                        <p>I like to code things from scratch, and enjoy bringing ideas to life in the browser.</p>
-                    </div>
-                    <div className = 'services-box'>
-                        <div className='icon-box'>
-                            <img style={(color.backgroundColor.name === "white" || color.backgroundColor.name === "light")?{filter: "brightness(0)"}:{  }} src={DesignerIcon} alt="Design Icon"/>
-                        </div>
-                            <h2>Graphic Designer</h2>
-                            <p>I value simple content structure, clean design patterns, and thoughful interactions.</p>
-                    </div>
-                </div>
-            </div>
-            <div className='skills'>
+            <WorkExperience />
+            <div 
+                className='skills' 
+                ref={ref}
+            >
                 <h1 className='my-skills about-h1 hover-name-container'>
                     {first_letter_3.map((letter) => 
                         <p className='name-letter'>{letter}</p>
@@ -94,10 +66,13 @@ const About = () => {
                     </span>
                 </h1>
                 <div id='skill-container'>
-                    <div id="skill-bars">
+                    <div 
+                        id={ isVisible ? 'skill-bars' : '' }
+                        className='skill-bars-class'
+                    >
                         <div id="bar">
                             <div id="info">
-                                <tag>HTML</tag>
+                                <tag className='span'>HTML</tag>
                             </div>
                             <div id="progress-line" className='html'>
                                 <tag className='span'></tag>
@@ -105,7 +80,7 @@ const About = () => {
                         </div>
                         <div id="bar">
                             <div id="info">
-                                <tag className='span'>CSS</tag>
+                                <tag className='span'>CSS / Sass</tag>
                             </div>
                             <div id="progress-line" className='css'>
                                 <tag className='span'></tag>
@@ -121,9 +96,9 @@ const About = () => {
                         </div>
                         <div id="bar">
                             <div id="info">
-                                <tag className='span'>C++</tag>
+                                <tag className='span'>TypeScript</tag>
                             </div>
-                            <div id="progress-line" className='cpp'>
+                            <div id="progress-line" className='typescript'>
                                 <tag className='span'></tag>
                             </div>
                         </div>
@@ -137,9 +112,25 @@ const About = () => {
                         </div>
                         <div id="bar">
                             <div id="info">
-                                <tag className='span'>Python</tag>
+                                <tag className='span'>Next JS</tag>
                             </div>
-                            <div id="progress-line" className='python'>
+                            <div id="progress-line" className='nextjs'>
+                                <tag className='span'></tag>
+                            </div>
+                        </div>
+                        <div id="bar">
+                            <div id="info">
+                                <tag className='span'>GraphQL</tag>
+                            </div>
+                            <div id="progress-line" className='graphql'>
+                                <tag className='span'></tag>
+                            </div>
+                        </div>
+                        <div id="bar">
+                            <div id="info">
+                                <tag className='span'>Vue</tag>
+                            </div>
+                            <div id="progress-line" className='vue'>
                                 <tag className='span'></tag>
                             </div>
                         </div>
