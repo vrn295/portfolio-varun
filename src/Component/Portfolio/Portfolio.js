@@ -1,5 +1,4 @@
 import './Portfolio.css';
-import {portfolioData} from './PortfolioData'
 import TrimEmpire from '../Media/Trim-Empire.png'  
 import Zephyr from '../Media/Zephyr.png'  
 import PigGame from '../Media/Pig-Game.png'  
@@ -31,7 +30,7 @@ const Portfolio = () => {
                     <caption>
                         <h2>Trim Empire</h2>
                         <p>Trim Empire is a Responsive Barber Website</p>
-                        <a href="https://trim-empire.netlify.app/" target='_blank'><button>Visit Website</button></a>
+                        <a href="https://trim-empire.netlify.app/" target='_blank' rel="noreferrer"><button>Visit Website</button></a>
                     </caption>
                 </div>
                 <div className='work-list'>
@@ -40,7 +39,7 @@ const Portfolio = () => {
                     <caption>
                         <h2>Zephyr</h2>
                         <p>Zephyr is a website for Film And Photography Society of my College</p>
-                        <a href="https://www.zephyrcvs.com//" target='_blank'><button>Visit Website</button></a>
+                        <a href="https://www.zephyrcvs.com//" target='_blank' rel="noreferrer"><button>Visit Website</button></a>
                     </caption>
                 </div>
                 <div className='work-list'>
@@ -49,7 +48,7 @@ const Portfolio = () => {
                     <caption>
                         <h2>Pig Game</h2>
                         <p>Pig Game is a dice game in which the first who scores 100 wins.</p>
-                        <a href="https://vrn295-pig-game.netlify.app/" target='_blank'><button>Visit Website</button></a>
+                        <a href="https://vrn295-pig-game.netlify.app/" target='_blank' rel="noreferrer"><button>Visit Website</button></a>
                     </caption>
                 </div>
                 <div className='work-list'>
@@ -58,7 +57,7 @@ const Portfolio = () => {
                     <caption>
                         <h2>ToDo App</h2>
                         <p>This is simple todo app made with the help of Django</p>
-                        <a href="http://vrn295.pythonanywhere.com/" target='_blank'><button>Visit Website</button></a>
+                        <a href="http://vrn295.pythonanywhere.com/" target='_blank' rel="noreferrer"><button>Visit Website</button></a>
                     </caption>
                 </div>
             </div>

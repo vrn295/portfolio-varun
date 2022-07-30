@@ -8,6 +8,7 @@ import Navbar from './Navbar/Navbar';
 import Footer from './Footer/Footer';
 
 import { useEffect } from "react";
+import Services from './Services/Services';
 // import InitialLoader from '../Common/InitialLoader';
 
 const App = () => {
@@ -26,6 +27,7 @@ const App = () => {
 
   const home = useRef()
   const about = useRef()
+  const services = useRef()
   const portfolio = useRef()
   const contact = useRef()
 
@@ -60,6 +62,9 @@ const App = () => {
           <div ref={about}>
             <About />
           </div>
+          {/* <div ref={services}>
+            <Services />
+          </div> */}
           <div ref={portfolio}>
             <Portfolio />
           </div>

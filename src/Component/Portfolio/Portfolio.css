@@ -1,32 +1,34 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 
 .portfolio-container {
-  margin-top: 90px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 1440px;
+  margin: 90px auto 0 auto
 }
 
 .my-portfolio {
   font-family: raleway;
-  font-size: 3vw;
+  font-size: 2.8rem;
   margin-bottom: 100px;
 }
 
 .my-work {
   display: grid;
-  grid-template-columns: 35vw 35vw;
+  grid-template-columns: 33rem 33rem;
   grid-gap: 50px;
   justify-items: center;
 }
 
 .work-list {
   position: relative;
-  font-size: 1.3vw;
+  font-size: 1.15rem;
+  line-height: 1.5rem;
 }
 
 .work-list img {
-  width: 35vw;
+  width: 32rem;
   height: auto;
   border-radius: 10px;
   transition: 0.2s ease-in;
@@ -39,7 +41,7 @@
   top: 48%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 20vw;
+  width: 18rem;
   text-align: center;
   opacity: 0;
   transition: 0.2s ease-in;
@@ -53,7 +55,7 @@
   border: 2px whitesmoke solid;
   background-color: transparent;
   color: whitesmoke;
-  font-size: 1.1vw;
+  font-size: 0.9rem;
 }
 
 .portfolio-overlay {
@@ -116,6 +118,12 @@
   }
   .my-portfolio {
     font-size: 8vw;
+    margin-bottom: 2rem;
+    margin-top: 0;
+  }
+  .work-list caption {
+    width: 60vw;
+    line-height: 1rem;
   }
   .work-list {
     font-size: 3vw;
@@ -125,5 +133,6 @@
   }
   .work-list button {
     font-size: 2.5vw;
+    padding: 8px 20px;
   }
 }

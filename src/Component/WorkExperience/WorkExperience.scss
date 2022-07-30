@@ -1,0 +1,96 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 0;
+  max-width: 1440px;
+  margin: 90px auto 0 auto;
+  font-family: raleway;
+  main {
+    width: 60%;
+    border-left: 4px solid var(--secondary-color-light);
+    padding: 2rem 1.5rem;
+    section {
+      &:not(:last-child) {
+        margin-bottom: 4rem;
+      }
+      font-family: Poppins;
+      color: var(--secondary-color);
+      h3 {
+        margin: 0;
+        font-size: 2rem;
+        font-weight: bold;
+        position: relative;
+        &::before {
+          content: "";
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          left: -1.8125rem;
+          width: .375rem;
+          height: 3.125rem;
+          border-radius: 10px;
+          background-color: var(--primary-color);
+        }
+        a {
+          text-decoration: none;
+          color: inherit;
+          background: linear-gradient(currentColor 0 0) 0 100% /var(--d, 0) 2.5px no-repeat;
+          transition:0.5s;
+          // margin: 0;
+          &:hover {
+            opacity: 100%;
+            --d: 100%;
+          }
+        }
+      }
+      .time {
+        font-size: 1rem;
+        opacity: 0.6;
+        color: var(--secondary-color);
+      }
+      ul {
+        padding-inline-start: 1rem;
+        opacity: 0.6;
+      }
+    }
+    @media screen and (max-width: 1200px) {
+      width: 70vw;
+    }
+    @media screen and (max-width: 800px) {
+      section {
+        h3 {
+          font-size: 1.4rem;
+        }
+        .time {
+          font-size: 0.8rem;
+        } 
+        ul {
+          font-size: 0.8rem;
+        }
+      }
+    }
+    @media screen and (max-width: 600px) {
+      padding: 1.5rem 0.8rem;
+      padding-right: 0;
+      section {
+        &:not(:last-child) {
+          margin-bottom: 2rem;
+        }
+        h3 {
+          font-size: 1rem;
+          &::before {
+            left: -1.125rem;
+          }
+        }
+        .time {
+          font-size: 0.6rem;
+        } 
+        ul {
+          font-size: 0.6rem;
+          padding-inline-start: 0.8rem;
+        }
+      }
+    }
+  }
+}

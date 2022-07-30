@@ -1,20 +1,21 @@
 .about-container {
-  margin-top: 90px;
   display: flex;
   flex-direction: column;
   align-items: center;
   z-index: 0;
+  max-width: 1440px;
+  margin: 90px auto 0 auto
 }
 
 .about-h1 {
   font-family: raleway;
-  font-size: 3vw;
+  font-size: 2.8rem;
   text-align: center;
 }
 
 .about-details {
   margin-top: 45px;
-  width: 100vw;
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -26,22 +27,22 @@
   margin-right: 15vw;
 }
 .about-details h2 {
-  font-size: 2.5vw;
+  font-size: 2.2rem;
 }
 
 .about-details p {
-  font-size: 1.5vw;
+  font-size: 1.35rem;
   text-align: justify;
 }
 
 .about-details img {
-  max-width: 30vw;
+  max-width: 28rem;
   border-radius: 10px;
   pointer-events: none;
 }
 .btn-download-cv {
-  width: 12vw !important;
-  padding: 1vw 1vw !important;
+  width: 10rem !important;
+  padding: 0.8rem 1rem !important;
   margin-left: 10vw !important;
   margin-top: 2vw;
 }
@@ -49,90 +50,6 @@
 .btn-download-cv a {
   text-decoration: none !important;
   color: inherit;
-}
-
-.my-services {
-  margin-top: 5vw;
-  width: 50vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.services {
-  margin-top: 2vw;
-  width: 100vw;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-.services-box {
-  background-color: var(--background-accent);
-  width: 30vw;
-  height: 30vw;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  transition: 0.3s ease-in;
-  position: relative;
-  /* z-index: -1; */
-}
-
-.services-box::before{
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: 15%;
-  transform: translate(-50%, -50%);
-  border-radius: 100px;
-  background-color: var(--primary-color);
-  /* background-color: black; */
-  width: 0%;
-  height: 0%;
-  transition: 0.3s ease-in-out;
-}
-
-.services-box:hover::before{
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
-  top: 50%;
-}
-
-.icon-box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--primary-color);
-  border-radius: 30px;
-  width: 8vw;
-  margin-top: 2vw;
-  height: 8vw;
-  transition: 0.3s ease-in;
-}
-
-.services img {
-  max-height: 5vw;
-  width: auto;
-  z-index: 1;
-}
-
-.services h2 {
-  margin-top: 3vw;
-  font-size: 2.5vw;
-  z-index: 1;
-}
-
-.services p {
-  font-size: 1.5vw;
-  text-align: center;
-  max-width: 25vw;
-  opacity: 0.8;
-  z-index: 1;
 }
 
 /* .services-box:hover {
@@ -148,11 +65,14 @@
   align-items: center;
 }
 
-#skill-bars {
-  margin: 2vh;
-  padding: 25px 30px;
-  width: 40vw;
+#skill-container {
+  height: 604.391px;
+}
 
+.skill-bars-class {
+  margin: 2.2rem;
+  padding: 25px 30px;
+  width: 38rem;
   border-radius: 10px;
 }
 #skill-bars #bar {
@@ -175,7 +95,7 @@
     opacity: 1;
   }
 }
-#skill-bars #bar #progress-line {
+#bar #progress-line {
   height: 10px;
   width: 100%;
   background: #f0f0f0;
@@ -183,8 +103,13 @@
   transform: scaleX(0);
   transform-origin: left;
   border-radius: 10px;
+}
+
+#skill-bars #bar #progress-line {
   animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
 }
+
+
 @keyframes animate {
   100% {
     transform: scaleX(1);
@@ -207,16 +132,22 @@
   width: 80%;
 }
 #bar #progress-line.javascript .span {
-  width: 70%;
+  width: 80%;
 }
-#bar #progress-line.cpp .span {
+#bar #progress-line.typescript .span {
   width: 70%;
 }
 #bar #progress-line.react .span {
   width: 80%;
 }
-#bar #progress-line.python .span {
+#bar #progress-line.nextjs .span {
+  width: 70%;
+}
+#bar #progress-line.graphql .span {
   width: 60%;
+}
+#bar #progress-line.vue .span {
+  width: 40%;
 }
 #progress-line .span::before {
   position: absolute;
@@ -258,16 +189,22 @@
   content: "80%";
 }
 #progress-line.javascript .span::after {
-  content: "70%";
+  content: "80%";
 }
-#progress-line.cpp .span::after {
+#progress-line.typescript .span::after {
   content: "70%";
 }
 #progress-line.react .span::after {
   content: "80%";
 }
-#progress-line.python .span::after {
+#progress-line.nextjs .span::after {
+  content: "70%";
+}
+#progress-line.graphql .span::after {
   content: "60%";
+}
+#progress-line.vue .span::after {
+  content: "40%";
 }
 
 /* @media (max-width: 1200px) {
@@ -296,33 +233,6 @@
     margin-top: 7vw;
     max-width: 60vw;
   }
-  .services {
-    width: 60vw;
-    height: auto;
-    flex-direction: column;
-    align-items: center;
-  }
-  .services-box {
-    width: 60vw;
-    height: 60vw;
-    margin: 5vw;
-    justify-content: center;
-  }
-  .icon-box {
-    width: 16vw;
-    height: 16vw;
-    border-radius: 10px;
-  }
-  .services img {
-    max-height: 10vw;
-  }
-  .services h2 {
-    font-size: 4vw;
-  }
-  .services p {
-    max-width: 50vw;
-    font-size: 3vw;
-  }
   #skill-bars {
     width: 80vw;
   }
@@ -349,6 +259,7 @@
   }
   #skill-bars{
     width: 70vw;
+    margin-top: 0;
   }
   .about-h1 {
     font-size: 8vw;
@@ -359,10 +270,10 @@
   .about-details p {
     font-size: 4vw;
   }
-
-  .services h2 {
-    font-size: 5vw;
+  .about-details {
+    margin-top: 0;
   }
+
   .btn-download-cv {
     width: 24vw !important;
     padding: 2vw 2vw !important;
