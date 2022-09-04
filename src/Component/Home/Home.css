@@ -8,7 +8,7 @@ body {
   font-family: Poppins;
   margin: 0;
   padding: 0;
-  transition: 0.3 ease-in;
+  transition: 0.3s ease-in;
 }
 
 body::-webkit-scrollbar {
@@ -43,7 +43,7 @@ html[theme-color="blue"] {
   --primary-color: #00909e;
 }
 html[theme-color="purple"] {
-  --primary-color: #481380;
+  --primary-color: #ef8354;
 }
 html[background-color="black"] {
   --background-color: #171717;

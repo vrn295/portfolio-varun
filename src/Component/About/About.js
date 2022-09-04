@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 
 import './About.css';
 import AboutImage from '../Media/WhatsApp Image 2020-11-24 at 5.57.13 PM.jpeg'
@@ -8,8 +8,17 @@ import WorkExperience from '../WorkExperience/WorkExperience';
 import useOnScreen from '../../Common/intersectionObserver';
 
 const About = () => {
+    const [isVisibleOnce, setisVisibleOnce] = useState(false)
     const ref = useRef()
     const isVisible = useOnScreen(ref)
+
+    useEffect(() => {
+      if(isVisible) {
+        setisVisibleOnce(true)
+      }
+    }, [isVisible])
+    
+
     let first_letter = "About"
     let second_letter = "Me"
     first_letter = first_letter.split("")
@@ -19,7 +28,6 @@ const About = () => {
     let second_letter_3 = "Skills"
     first_letter_3 = first_letter_3.split("")
     second_letter_3 = second_letter_3.split("")
-    console.log(isVisible)
     return(
         <div className='about-container'>
             <div>
@@ -67,7 +75,7 @@ const About = () => {
                 </h1>
                 <div id='skill-container'>
                     <div 
-                        id={ isVisible ? 'skill-bars' : '' }
+                        id={ (isVisible || isVisibleOnce) ? 'skill-bars' : '' }
                         className='skill-bars-class'
                     >
                         <div id="bar">

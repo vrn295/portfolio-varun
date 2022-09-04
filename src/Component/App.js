@@ -8,7 +8,7 @@ import Navbar from './Navbar/Navbar';
 import Footer from './Footer/Footer';
 
 import { useEffect } from "react";
-import Services from './Services/Services';
+// import Services from './Services/Services';
 // import InitialLoader from '../Common/InitialLoader';
 
 const App = () => {

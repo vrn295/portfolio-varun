@@ -5,11 +5,11 @@ const experience = [
     conpany_link: "https://squareboat.com/",
     time: 'September 2021 - Present',
     points: [
-      'Work with client dealing with social media and designing domain.',
-      'Write modern, performant, maintainable code for a diverse array of client and internal projects',
-      'Work with a variety of different languages, frameworks such as JavaScript, TypeScript,  React,  Next JS,  REST and GraphQL.',
+      'Worked with client dealing with social media and designing domain.',
+      'Wrote modern, performant, maintainable code for a diverse array of client and internal projects',
+      'Worked with a variety of different languages, frameworks such as JavaScript, TypeScript,  React,  Next JS,  REST and GraphQL.',
       'Resposible for page speed and SEO improvements.',
-      'Communicate with multi-disciplinary teams of engineers, designers, and clients on a daily basis.',
+      'Communicated with multi-disciplinary teams of engineers, designers, and clients on a daily basis.',
     ]
   },
   {
@@ -21,7 +21,7 @@ const experience = [
       'Worked with the team of professional developers with clients dealing with social media and housing domian.',
       'Responsible for developing Web Application using JavaScript, HTML, CSS, React JS, Redux and Context API.',
       'Collaborated with Backend Developers, UI/UX Designer and Testing team to deliver desired product.',
-      'dentify problems uncovered by testing or customer feedback, and correct problems or refer problems to appropriate personnel for correction.Web Applications.',
+      'Identify problems uncovered by testing or customer feedback, and correct problems or refer problems to appropriate personnel for correction.Web Applications.',
     ]
   },
   {
