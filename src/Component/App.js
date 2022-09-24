@@ -29,9 +29,9 @@ const App = () => {
   }
 
   useEffect(() => {
-    // setTimeout(() => {
-    //   setisLoading(false)
-    // }, 3000);
+    setTimeout(() => {
+      setisLoading(false)
+    }, 3000);
     var htmlElement = document.querySelector('html')
     htmlElement.setAttribute('background-color', "black")
     
