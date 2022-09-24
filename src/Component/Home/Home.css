@@ -160,8 +160,8 @@ span {
   transition: 0.3s ease-in;
   animation: 
     typing 2s steps(40, end),
-    blink-caret .75s step-end infinite;
-  /* animation-delay: 1.5s; */
+    blink-caret 1s step-end infinite;
+  animation-delay: 1.5s;
 }
 
 /* The typing effect */
@@ -185,6 +185,7 @@ span {
   transition: 0.2s ease;
   transform: translateY(-50%);
   animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  z-index: 10;
   /* animation-delay: 1.5s; */
 }
 

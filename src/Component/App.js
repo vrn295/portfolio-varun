@@ -9,13 +9,29 @@ import Footer from './Footer/Footer';
 
 import { useEffect } from "react";
 // import Services from './Services/Services';
-// import InitialLoader from '../Common/InitialLoader';
+import InitialLoader from '../Common/InitialLoader';
 
 const App = () => {
+  const [isScroll, setIsScroll] = useState(false)
+  const [isLoading, setisLoading] = useState(true)
+  
+  const home = useRef()
+  const about = useRef()
+  // const services = useRef()
+  const portfolio = useRef()
+  const contact = useRef()
+
+  function handleScrollClick(ref) {
+    ref.current.scrollIntoView({ behavior: 'smooth' })
+  }
+  const scrollHandle = () => {
+    window.pageYOffset > 100 ? setIsScroll(true) : setIsScroll(false)
+  }
+
   useEffect(() => {
-    // setTimeout(() => {
-    //   setisLoading(false)
-    // }, 3000);
+    setTimeout(() => {
+      setisLoading(false)
+    }, 3000);
     var htmlElement = document.querySelector('html')
     htmlElement.setAttribute('background-color', "black")
     
@@ -25,28 +41,12 @@ const App = () => {
     }
   },[])
 
-  const home = useRef()
-  const about = useRef()
-  const services = useRef()
-  const portfolio = useRef()
-  const contact = useRef()
-
-  function handleScrollClick(ref) {
-    ref.current.scrollIntoView({ behavior: 'smooth' })
-  }
-  
-  const [isScroll, setIsScroll] = useState(false)
-  // const [isLoading, setisLoading] = useState(true)
-  const scrollHandle = () => {
-    window.pageYOffset > 100 ? setIsScroll(true) : setIsScroll(false)
-  }
-
   return (
     <div className="App">
-      {/* {
+      {
         isLoading && 
         <InitialLoader /> 
-      } */}
+      }
       <React.Fragment>
         <Navbar
             home={home}

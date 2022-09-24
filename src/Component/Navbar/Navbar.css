@@ -59,6 +59,7 @@
   align-items: flex-end;
   z-index: 13;
   transition: 0.3s ease;
+  cursor: pointer;
 }
 
 .hamburger-scroll {
