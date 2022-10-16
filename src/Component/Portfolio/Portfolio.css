@@ -27,9 +27,9 @@
   line-height: 1.5rem;
 }
 
-.work-list img {
+.work-list img, video {
   width: 32rem;
-  height: auto;
+  height: 100%;
   border-radius: 10px;
   transition: 0.2s ease-in;
 }
@@ -80,8 +80,14 @@
   width: 100%;
   height: 100%;
 }
-.work-list:hover img {
-  opacity: 50%;
+.work-list:hover img, video {
+  /* opacity: 50%; */
+}
+
+.more_details {
+  font-size: 1.8rem;
+  margin-top: 2rem;
+  margin-bottom: 0;
 }
 
 .work-list button:hover {
@@ -101,7 +107,7 @@
   .work-list {
     font-size: 3vw;
   }
-  .work-list img {
+  .work-list img, video {
     width: 80vw;
     border-radius: 5px;
   }
@@ -128,11 +134,15 @@
   .work-list {
     font-size: 3vw;
   }
-  .work-list img {
+  .work-list img, video {
     width: 70vw;
   }
   .work-list button {
     font-size: 2.5vw;
     padding: 8px 20px;
+  }
+  .more_details {
+    font-size: 1rem;
+    margin-top: 1rem;
   }
 }
