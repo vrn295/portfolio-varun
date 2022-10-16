@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react'
 
 import './About.css';
 import AboutImage from '../Media/WhatsApp Image 2020-11-24 at 5.57.13 PM.jpeg'
-import Resume2021 from '../Media/Resume2021.pdf'
+import Resume2021 from '../Media/Resume.pdf'
 // import { useSelector } from 'react-redux';
 import WorkExperience from '../WorkExperience/WorkExperience';
 import useOnScreen from '../../Common/intersectionObserver';
