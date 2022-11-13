@@ -62,6 +62,7 @@
   padding: 0.8rem 1rem !important;
   margin-left: 10vw !important;
   margin-top: 2vw;
+  z-index: 6;
 }
 
 .btn-download-cv a {
