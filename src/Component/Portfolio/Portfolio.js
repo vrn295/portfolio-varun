@@ -1,10 +1,11 @@
-import "./Portfolio.css";
-import Spotify from "../Media/Spotify.mp4";
-import TrimEmpire from "../Media/Trim-Empire.png";
-import TipSplitter from "../Media/Tip-Splitter.png";
-import Zephyr from "../Media/Zephyr.png";
 import PigGame from "../Media/Pig-Game.png";
+import Spotify from "../Media/Spotify.mp4";
+import TipSplitter from "../Media/Tip-Splitter.png";
 import Todo from "../Media/ToDo.png";
+import TrimEmpire from "../Media/Trim-Empire.png";
+import VAPLabs from "../Media/VAPLabs.mov";
+import Zephyr from "../Media/Zephyr.png";
+import "./Portfolio.css";
 
 const Portfolio = () => {
   let first_letter = "My";
@@ -44,6 +45,27 @@ const Portfolio = () => {
               target="_blank"
               rel="noreferrer"
             >
+              <button>Visit Website</button>
+            </a>
+          </caption>
+        </div>
+        <div className="work-list">
+          <video
+            src={VAPLabs}
+            alt="VAP Labs"
+            autoPlay
+            loop
+            muted
+            controls={false}
+          />
+          <div className="portfolio-overlay"></div>
+          <caption>
+            <h2>VAP Labs</h2>
+            <p>
+              Empowering your digital journey with custom web applications and
+              expert services.
+            </p>
+            <a href="https://vaplabs.in/" target="_blank" rel="noreferrer">
               <button>Visit Website</button>
             </a>
           </caption>
