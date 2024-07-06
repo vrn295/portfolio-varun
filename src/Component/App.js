@@ -1,11 +1,11 @@
 import React, { useRef, useState } from 'react';
 
-import Home from './Home/Home';
 import About from './About/About';
 import Contact from './Contact/Contact';
-import Portfolio from './Portfolio/Portfolio';
-import Navbar from './Navbar/Navbar';
 import Footer from './Footer/Footer';
+import Home from './Home/Home';
+import Navbar from './Navbar/Navbar';
+import Portfolio from './Portfolio/Portfolio';
 
 import { useEffect } from "react";
 // import Services from './Services/Services';

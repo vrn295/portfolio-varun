@@ -60,9 +60,14 @@
 .btn-download-cv {
   width: 10rem !important;
   padding: 0.8rem 1rem !important;
-  margin-left: 10vw !important;
   margin-top: 2vw;
   z-index: 6;
+}
+
+.resume-btn-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
 }
 
 .btn-download-cv a {
@@ -260,11 +265,9 @@
   .btn-download-cv {
     width: 20vw !important;
     padding: 1.5vw 1.5vw !important;
-    margin-left: 10vw !important;
     margin-top: 2vw;
     font-size: 2vw !important;
     /* font-weight: normal !important; */
-    margin-left: 35% !important;
   }
 }
 
@@ -297,6 +300,8 @@
     padding: 2vw 2vw !important;
     font-size: 2.5vw !important;
     /* font-weight: normal !important; */
-    margin-left: 35% !important;
+  }
+  .resume-btn-container {
+    justify-content: center;
   }
 }

@@ -1,9 +1,21 @@
 const experience = [
   {
+    title: 'SDE-2',
+    conpany: "BarRaiser",
+    conpany_link: "https://www.barraiser.com/",
+    time: 'February 2023 - Present',
+    points: [
+      'Led the frontend team in developing and maintaining web platforms, Bots, Chrome extensions, automation, Zoom apps, and Teams apps.',
+      'Architected and implemented scalable frontend solutions to enhance user experience and application performance.',
+      'Integrated AWS services such as Lambda and ECS for efficient and scalable backend solutions..',
+      'Resposible for code reviews, mentoring junior developers, and ensuring code quality and best practices.',
+    ]
+  },
+  {
     title: 'Frontend Engineer',
     conpany: "Squareboat",
     conpany_link: "https://squareboat.com/",
-    time: 'September 2021 - Present',
+    time: 'September 2021 - January 2023',
     points: [
       'Worked with client dealing with social media and designing domain.',
       'Wrote modern, performant, maintainable code for a diverse array of client and internal projects',

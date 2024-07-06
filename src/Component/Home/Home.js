@@ -1,21 +1,20 @@
 
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react';
 import './Home.css';
 
 // Importing Icon from Iconify
-import { Icon } from '@iconify/react';
 import facebookFill from '@iconify/icons-akar-icons/facebook-fill';
-import linkedinIcon from '@iconify/icons-bi/linkedin';
 import githubFill from '@iconify/icons-akar-icons/github-fill';
 import instagramFill from '@iconify/icons-akar-icons/instagram-fill';
-import settingIcon from '@iconify/icons-uil/setting';
+import linkedinIcon from '@iconify/icons-bi/linkedin';
 import mail16Filled from '@iconify/icons-fluent/mail-16-filled';
+import settingIcon from '@iconify/icons-uil/setting';
+import { Icon } from '@iconify/react';
 
 // import ColorModal from './ColorModal';
-import { useSelector } from 'react-redux';
-import './ColorModal.css'
-import { useDispatch } from "react-redux";
-import { modalPrimary, modalBackground } from "../Redux/action/action";
+import { useDispatch, useSelector } from 'react-redux';
+import { modalBackground, modalPrimary } from "../Redux/action/action";
+import './ColorModal.css';
 
 
 const Home = ({ isScroll }) => {
@@ -60,57 +59,86 @@ const Home = ({ isScroll }) => {
 
   return (
     <React.Fragment>
-      <div className='home-container'>
+      <div className="home-container">
         {/* Name Container */}
-        <div className='name-container'>
+        <div className="name-container">
           {/* Printing name letter by letter */}
-          <div className='first-name'>
+          <div className="first-name">
             {firstNameArray.map((letter) => (
-              <p className='name-letter'>{letter}</p>
+              <p className="name-letter">{letter}</p>
             ))}
           </div>
-          <div className='last-name'>
+          <div className="last-name">
             {lastNameArray.map((letter) => (
-              <p className='name-letter'>{letter}</p>
+              <p className="name-letter">{letter}</p>
             ))}
           </div>
         </div>
-        <div className='home-discription typewriter'>
-          <p>I'm a <span className=''>Front-End Engineer</span></p>
+        <div className="home-discription typewriter">
+          <p>
+            I'm a <span className="">Software Development Engineer</span>
+          </p>
         </div>
-        <div className={"social-media-icons " + (isScroll ? "social-media-icons-scroll" : "")}>
-          <a href="https://www.facebook.com/profile.php?id=100004948182828" target='_blank' rel="noreferrer">
+        <button className="btn btn-download-cv" style={{ marginTop: "unset" }}>
+          <a href="/Resume.pdf" target="_blank" rel="noreferrer">
+            View resume
+          </a>
+        </button>
+        <div
+          className={
+            "social-media-icons " +
+            (isScroll ? "social-media-icons-scroll" : "")
+          }
+        >
+          <a
+            href="https://www.facebook.com/profile.php?id=100004948182828"
+            target="_blank"
+            rel="noreferrer"
+          >
             <Icon
               icon={facebookFill}
-              style={{ fontSize: '1.5rem' }}
+              style={{ fontSize: "1.5rem" }}
               color={color.backgroundColor.secondaryColor}
             />
           </a>
-          <a href="https://www.instagram.com/vrn_295/" target='_blank' rel="noreferrer">
+          <a
+            href="https://www.instagram.com/vrn_295/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <Icon
               icon={instagramFill}
-              style={{ fontSize: '1.5rem' }}
+              style={{ fontSize: "1.5rem" }}
               color={color.backgroundColor.secondaryColor}
             />
           </a>
-          <a href="https://www.linkedin.com/in/varun-kumar-0065851a7/" target='_blank' rel="noreferrer">
+          <a
+            href="https://www.linkedin.com/in/varun-kumar-0065851a7/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <Icon
               icon={linkedinIcon}
-              style={{ fontSize: '1.5rem' }}
+              style={{ fontSize: "1.5rem" }}
               color={color.backgroundColor.secondaryColor}
             />
           </a>
-          <a href="https://github.com/vrn295" target='_blank' rel="noreferrer">
+          <a href="https://github.com/vrn295" target="_blank" rel="noreferrer">
             <Icon
               icon={githubFill}
-              style={{ fontSize: '1.5rem' }}
+              style={{ fontSize: "1.5rem" }}
               color={color.backgroundColor.secondaryColor}
             />
           </a>
         </div>
-        <div className={"message-icons " + (isScroll ? "message-icons-scroll" : "")} style={{ zIndex: "10" }}>
-          <div className='color-setting-container' ref={myRef}>
-            <div style={{ position: "relative" }} onClick={handleSettingClick} >
+        <div
+          className={
+            "message-icons " + (isScroll ? "message-icons-scroll" : "")
+          }
+          style={{ zIndex: "10" }}
+        >
+          <div className="color-setting-container" ref={myRef}>
+            <div style={{ position: "relative" }} onClick={handleSettingClick}>
               {/* <p 
                                 className="setting-text"
                                 style={isScroll ? {opacity: "0"}: {}}
@@ -118,26 +146,70 @@ const Home = ({ isScroll }) => {
                             </p> */}
               <Icon
                 icon={settingIcon}
-                style={{ fontSize: '2rem' }}
+                style={{ fontSize: "2rem" }}
                 color={color.backgroundColor.secondaryColor}
                 className={"setting-icon"}
               />
             </div>
             {
-              <ul className={`color-box ${colorModalStatus ? 'enter-animation' : 'leaving-animation'}`}>
+              <ul
+                className={`color-box ${
+                  colorModalStatus ? "enter-animation" : "leaving-animation"
+                }`}
+              >
                 <p>Primary Color</p>
                 <div>
-                  <li onClick={() => { colorModalPrimary("default") }} className='default'></li>
-                  <li onClick={() => { colorModalPrimary("pink") }} className='pink'></li>
-                  <li onClick={() => { colorModalPrimary("blue") }} className='blue'></li>
-                  <li onClick={() => { colorModalPrimary('purple') }} className='purple'></li>
+                  <li
+                    onClick={() => {
+                      colorModalPrimary("default");
+                    }}
+                    className="default"
+                  ></li>
+                  <li
+                    onClick={() => {
+                      colorModalPrimary("pink");
+                    }}
+                    className="pink"
+                  ></li>
+                  <li
+                    onClick={() => {
+                      colorModalPrimary("blue");
+                    }}
+                    className="blue"
+                  ></li>
+                  <li
+                    onClick={() => {
+                      colorModalPrimary("purple");
+                    }}
+                    className="purple"
+                  ></li>
                 </div>
                 <p>Background Color</p>
                 <div>
-                  <li onClick={() => { colorModalBackground("black") }} className='black'></li>
-                  <li onClick={() => { colorModalBackground("white") }} className='white'></li>
-                  <li onClick={() => { colorModalBackground("light") }} className='light'></li>
-                  <li onClick={() => { colorModalBackground('dark') }} className='dark'></li>
+                  <li
+                    onClick={() => {
+                      colorModalBackground("black");
+                    }}
+                    className="black"
+                  ></li>
+                  <li
+                    onClick={() => {
+                      colorModalBackground("white");
+                    }}
+                    className="white"
+                  ></li>
+                  <li
+                    onClick={() => {
+                      colorModalBackground("light");
+                    }}
+                    className="light"
+                  ></li>
+                  <li
+                    onClick={() => {
+                      colorModalBackground("dark");
+                    }}
+                    className="dark"
+                  ></li>
                 </div>
               </ul>
             }
@@ -145,20 +217,70 @@ const Home = ({ isScroll }) => {
           <a href="mailto:varun.org295@gmail.com?Subject=Hello Varun">
             <Icon
               icon={mail16Filled}
-              style={{ fontSize: '2rem' }}
+              style={{ fontSize: "2rem" }}
               color={color.backgroundColor.secondaryColor}
             />
           </a>
         </div>
       </div>
-      {<div className={`${isScroll ? "color-selection-tab-scroll" : "color-selection-tab-bottom"}`}>
-        <div className={color.primaryColor === "default" || color.primaryColor?.name === "primary" || color.primaryColor === "" ? "selected-color" : ""}><li onClick={() => { colorModalPrimary("default") }} className='default'></li></div>
-        <div className={color.primaryColor === "pink" ? "selected-color" : ""}><li onClick={() => { colorModalPrimary("pink") }} className='pink'></li></div>
-        <div className={color.primaryColor === "blue" ? "selected-color" : ""}><li onClick={() => { colorModalPrimary("blue") }} className='blue'></li></div>
-        <div className={color.primaryColor === "purple" ? "selected-color" : ""}><li onClick={() => { colorModalPrimary('purple') }} className='purple'></li></div>
-      </div>}
+      {
+        <div
+          className={`${
+            isScroll
+              ? "color-selection-tab-scroll"
+              : "color-selection-tab-bottom"
+          }`}
+        >
+          <div
+            className={
+              color.primaryColor === "default" ||
+              color.primaryColor?.name === "primary" ||
+              color.primaryColor === ""
+                ? "selected-color"
+                : ""
+            }
+          >
+            <li
+              onClick={() => {
+                colorModalPrimary("default");
+              }}
+              className="default"
+            ></li>
+          </div>
+          <div
+            className={color.primaryColor === "pink" ? "selected-color" : ""}
+          >
+            <li
+              onClick={() => {
+                colorModalPrimary("pink");
+              }}
+              className="pink"
+            ></li>
+          </div>
+          <div
+            className={color.primaryColor === "blue" ? "selected-color" : ""}
+          >
+            <li
+              onClick={() => {
+                colorModalPrimary("blue");
+              }}
+              className="blue"
+            ></li>
+          </div>
+          <div
+            className={color.primaryColor === "purple" ? "selected-color" : ""}
+          >
+            <li
+              onClick={() => {
+                colorModalPrimary("purple");
+              }}
+              className="purple"
+            ></li>
+          </div>
+        </div>
+      }
     </React.Fragment>
-  )
+  );
 }
 
 export default Home

@@ -71,10 +71,11 @@ textarea::placeholder {
   font-family: Poppins;
   font-weight: bold;
   font-size: 1rem;
-  border-radius: 5px;
+  border-radius: 30px;
   color: whitesmoke;
-  transition: 0.3s ease-in;
+  transition: 0.2s ease-in;
   position: relative;
+  cursor: pointer;
 }
 
 .btn:hover{
@@ -147,6 +148,10 @@ textarea::placeholder {
   background-color: #049b6d;
 } */
 
+.contact-form button {
+  align-self: baseline;
+}
+
 @media (max-width: 1200px) {
   .contact-me {
     font-size: 6vw;
@@ -174,7 +179,6 @@ textarea::placeholder {
     width: auto;
     padding: 1.5vw 3vw;
     font-size: 2vw;
-    border-radius: 5px;
   }
   .contact-info {
     margin-top: 25px;
@@ -231,6 +235,7 @@ textarea::placeholder {
   .contact-form button {
     padding: 2vw 4vw;
     font-size: 3vw;
+    align-self: center;
   }
   .contact-info {
     min-width: 70vw;
